@@ -4,7 +4,7 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1575</x>
+      <x>1701</x>
       <y>18</y>
       <w>90</w>
       <h>90</h>
@@ -20,7 +20,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1440</x>
+      <x>1566</x>
       <y>18</y>
       <w>90</w>
       <h>90</h>
@@ -36,7 +36,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1710</x>
+      <x>1836</x>
       <y>0</y>
       <w>90</w>
       <h>90</h>
@@ -52,7 +52,7 @@ halign=left
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>1071</x>
+      <x>1197</x>
       <y>414</y>
       <w>54</w>
       <h>99</h>
@@ -63,7 +63,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1269</x>
+      <x>1395</x>
       <y>432</y>
       <w>90</w>
       <h>45</h>
@@ -76,7 +76,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1413</x>
+      <x>1539</x>
       <y>432</y>
       <w>90</w>
       <h>45</h>
@@ -90,7 +90,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1557</x>
+      <x>1683</x>
       <y>432</y>
       <w>90</w>
       <h>45</h>
@@ -104,7 +104,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1350</x>
+      <x>1476</x>
       <y>450</y>
       <w>81</w>
       <h>27</h>
@@ -115,7 +115,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1494</x>
+      <x>1620</x>
       <y>450</y>
       <w>81</w>
       <h>27</h>
@@ -126,7 +126,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1116</x>
+      <x>1242</x>
       <y>450</y>
       <w>171</w>
       <h>27</h>
@@ -137,7 +137,7 @@ halign=left
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>1044</x>
+      <x>1170</x>
       <y>585</y>
       <w>90</w>
       <h>99</h>
@@ -148,7 +148,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1269</x>
+      <x>1395</x>
       <y>594</y>
       <w>90</w>
       <h>45</h>
@@ -161,7 +161,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1440</x>
+      <x>1566</x>
       <y>594</y>
       <w>90</w>
       <h>45</h>
@@ -175,7 +175,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1602</x>
+      <x>1728</x>
       <y>594</y>
       <w>90</w>
       <h>45</h>
@@ -189,7 +189,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1350</x>
+      <x>1476</x>
       <y>612</y>
       <w>108</w>
       <h>27</h>
@@ -200,7 +200,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1521</x>
+      <x>1647</x>
       <y>612</y>
       <w>99</w>
       <h>27</h>
@@ -211,7 +211,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1107</x>
+      <x>1233</x>
       <y>612</y>
       <w>180</w>
       <h>27</h>
@@ -222,7 +222,7 @@ halign=left
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>1053</x>
+      <x>1179</x>
       <y>747</y>
       <w>54</w>
       <h>99</h>
@@ -233,7 +233,7 @@ halign=left
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>1035</x>
+      <x>1161</x>
       <y>927</y>
       <w>90</w>
       <h>99</h>
@@ -244,7 +244,7 @@ halign=left
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>1035</x>
+      <x>1161</x>
       <y>1152</y>
       <w>72</w>
       <h>99</h>
@@ -255,7 +255,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1107</x>
+      <x>1233</x>
       <y>774</y>
       <w>171</w>
       <h>27</h>
@@ -266,20 +266,20 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1260</x>
+      <x>1386</x>
       <y>756</y>
       <w>90</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>&lt;&lt;boundary&gt;&gt;
-대여 처리 폼
+대여 대출 폼
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1341</x>
+      <x>1467</x>
       <y>774</y>
       <w>108</w>
       <h>27</h>
@@ -290,13 +290,13 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1431</x>
+      <x>1557</x>
       <y>756</y>
       <w>99</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>&lt;&lt;controller&gt;&gt;
-도서 대여 컨트롤
+도서 대출 컨트롤
 
 </panel_attributes>
     <additional_attributes/>
@@ -304,7 +304,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1521</x>
+      <x>1647</x>
       <y>765</y>
       <w>99</w>
       <h>36</h>
@@ -315,7 +315,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1602</x>
+      <x>1728</x>
       <y>747</y>
       <w>108</w>
       <h>45</h>
@@ -329,7 +329,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1602</x>
+      <x>1728</x>
       <y>819</y>
       <w>108</w>
       <h>45</h>
@@ -343,7 +343,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1521</x>
+      <x>1647</x>
       <y>774</y>
       <w>99</w>
       <h>90</h>
@@ -354,7 +354,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1098</x>
+      <x>1224</x>
       <y>963</y>
       <w>189</w>
       <h>27</h>
@@ -365,26 +365,26 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1269</x>
+      <x>1395</x>
       <y>945</y>
       <w>90</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>&lt;&lt;boundary&gt;&gt;
-대여 처리 폼
+대여 반납 폼
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1440</x>
+      <x>1566</x>
       <y>945</y>
       <w>99</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>&lt;&lt;controller&gt;&gt;
-도서 대여 컨트롤
+도서 반납 컨트롤
 
 </panel_attributes>
     <additional_attributes/>
@@ -392,7 +392,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1611</x>
+      <x>1737</x>
       <y>900</y>
       <w>108</w>
       <h>45</h>
@@ -406,7 +406,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1350</x>
+      <x>1476</x>
       <y>963</y>
       <w>108</w>
       <h>27</h>
@@ -417,7 +417,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1530</x>
+      <x>1656</x>
       <y>918</y>
       <w>99</w>
       <h>72</h>
@@ -428,7 +428,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1602</x>
+      <x>1728</x>
       <y>684</y>
       <w>108</w>
       <h>45</h>
@@ -442,7 +442,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1521</x>
+      <x>1647</x>
       <y>693</y>
       <w>99</w>
       <h>108</h>
@@ -453,7 +453,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1611</x>
+      <x>1737</x>
       <y>1053</y>
       <w>108</w>
       <h>45</h>
@@ -467,7 +467,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1611</x>
+      <x>1737</x>
       <y>972</y>
       <w>108</w>
       <h>45</h>
@@ -481,7 +481,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1530</x>
+      <x>1656</x>
       <y>963</y>
       <w>99</w>
       <h>54</h>
@@ -492,7 +492,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1530</x>
+      <x>1656</x>
       <y>963</y>
       <w>99</w>
       <h>135</h>
@@ -503,7 +503,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1260</x>
+      <x>1386</x>
       <y>1161</y>
       <w>90</w>
       <h>45</h>
@@ -516,7 +516,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1413</x>
+      <x>1539</x>
       <y>1161</y>
       <w>117</w>
       <h>45</h>
@@ -530,7 +530,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1611</x>
+      <x>1737</x>
       <y>1161</y>
       <w>108</w>
       <h>45</h>
@@ -544,7 +544,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1521</x>
+      <x>1647</x>
       <y>1179</y>
       <w>108</w>
       <h>27</h>
@@ -555,7 +555,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1341</x>
+      <x>1467</x>
       <y>1179</y>
       <w>90</w>
       <h>27</h>
@@ -566,7 +566,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1089</x>
+      <x>1215</x>
       <y>1179</y>
       <w>189</w>
       <h>27</h>
@@ -577,31 +577,31 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>387</x>
+      <x>513</x>
       <y>1323</y>
       <w>27</w>
-      <h>324</h>
+      <h>198</h>
     </coordinates>
     <panel_attributes>lt=.
 </panel_attributes>
-    <additional_attributes>10.0;340.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;200.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>585</x>
+      <x>711</x>
       <y>1341</y>
       <w>27</w>
-      <h>315</h>
+      <h>171</h>
     </coordinates>
     <panel_attributes>lt=.
 </panel_attributes>
-    <additional_attributes>10.0;330.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>549</x>
+      <x>675</x>
       <y>1305</y>
       <w>90</w>
       <h>45</h>
@@ -614,7 +614,7 @@ _:로그인 폼_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1017</x>
+      <x>1143</x>
       <y>1314</y>
       <w>108</w>
       <h>45</h>
@@ -627,7 +627,7 @@ _:회원 정보_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>801</x>
+      <x>927</x>
       <y>1377</y>
       <w>36</w>
       <h>99</h>
@@ -638,7 +638,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>603</x>
+      <x>729</x>
       <y>1395</y>
       <w>216</w>
       <h>36</h>
@@ -650,7 +650,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>828</x>
+      <x>954</x>
       <y>1413</y>
       <w>243</w>
       <h>36</h>
@@ -662,31 +662,31 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>810</x>
+      <x>936</x>
       <y>1341</y>
       <w>27</w>
-      <h>315</h>
+      <h>171</h>
     </coordinates>
     <panel_attributes>lt=.
 </panel_attributes>
-    <additional_attributes>10.0;330.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1062</x>
+      <x>1188</x>
       <y>1350</y>
       <w>27</w>
-      <h>306</h>
+      <h>162</h>
     </coordinates>
     <panel_attributes>lt=.
 </panel_attributes>
-    <additional_attributes>10.0;320.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;160.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>576</x>
+      <x>702</x>
       <y>1368</y>
       <w>36</w>
       <h>99</h>
@@ -697,7 +697,7 @@ _:회원 정보_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1053</x>
+      <x>1179</x>
       <y>1413</y>
       <w>36</w>
       <h>45</h>
@@ -708,7 +708,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>405</x>
+      <x>531</x>
       <y>1368</y>
       <w>189</w>
       <h>36</h>
@@ -720,7 +720,7 @@ id, passwd</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>378</x>
+      <x>504</x>
       <y>1368</y>
       <w>36</w>
       <h>36</h>
@@ -731,7 +731,7 @@ id, passwd</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4518</x>
+      <x>4644</x>
       <y>108</y>
       <w>90</w>
       <h>90</h>
@@ -747,7 +747,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4383</x>
+      <x>4509</x>
       <y>108</y>
       <w>90</w>
       <h>90</h>
@@ -763,7 +763,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4653</x>
+      <x>4779</x>
       <y>90</y>
       <w>90</w>
       <h>90</h>
@@ -779,7 +779,7 @@ halign=left
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>4005</x>
+      <x>4131</x>
       <y>504</y>
       <w>54</w>
       <h>99</h>
@@ -790,7 +790,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4212</x>
+      <x>4338</x>
       <y>522</y>
       <w>90</w>
       <h>45</h>
@@ -803,7 +803,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4356</x>
+      <x>4482</x>
       <y>522</y>
       <w>90</w>
       <h>45</h>
@@ -817,7 +817,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4500</x>
+      <x>4626</x>
       <y>522</y>
       <w>90</w>
       <h>45</h>
@@ -831,7 +831,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4293</x>
+      <x>4419</x>
       <y>540</y>
       <w>81</w>
       <h>27</h>
@@ -842,7 +842,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4437</x>
+      <x>4563</x>
       <y>540</y>
       <w>81</w>
       <h>27</h>
@@ -853,7 +853,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4059</x>
+      <x>4185</x>
       <y>540</y>
       <w>171</w>
       <h>27</h>
@@ -864,7 +864,7 @@ halign=left
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>3978</x>
+      <x>4104</x>
       <y>675</y>
       <w>81</w>
       <h>99</h>
@@ -875,7 +875,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4212</x>
+      <x>4338</x>
       <y>684</y>
       <w>90</w>
       <h>45</h>
@@ -888,7 +888,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4383</x>
+      <x>4509</x>
       <y>684</y>
       <w>90</w>
       <h>45</h>
@@ -902,7 +902,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4545</x>
+      <x>4671</x>
       <y>684</y>
       <w>90</w>
       <h>45</h>
@@ -916,7 +916,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4293</x>
+      <x>4419</x>
       <y>702</y>
       <w>108</w>
       <h>27</h>
@@ -927,7 +927,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4464</x>
+      <x>4590</x>
       <y>702</y>
       <w>99</w>
       <h>27</h>
@@ -938,7 +938,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4050</x>
+      <x>4176</x>
       <y>702</y>
       <w>180</w>
       <h>27</h>
@@ -949,7 +949,7 @@ halign=left
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>3987</x>
+      <x>4113</x>
       <y>837</y>
       <w>54</w>
       <h>99</h>
@@ -960,7 +960,7 @@ halign=left
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>3969</x>
+      <x>4095</x>
       <y>1017</y>
       <w>81</w>
       <h>99</h>
@@ -971,7 +971,7 @@ halign=left
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>3978</x>
+      <x>4104</x>
       <y>1242</y>
       <w>63</w>
       <h>99</h>
@@ -982,7 +982,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4050</x>
+      <x>4176</x>
       <y>864</y>
       <w>171</w>
       <h>27</h>
@@ -993,7 +993,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4203</x>
+      <x>4329</x>
       <y>846</y>
       <w>90</w>
       <h>45</h>
@@ -1006,7 +1006,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4284</x>
+      <x>4410</x>
       <y>864</y>
       <w>108</w>
       <h>27</h>
@@ -1017,7 +1017,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4374</x>
+      <x>4500</x>
       <y>846</y>
       <w>99</w>
       <h>45</h>
@@ -1031,7 +1031,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4464</x>
+      <x>4590</x>
       <y>855</y>
       <w>99</w>
       <h>36</h>
@@ -1042,7 +1042,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4545</x>
+      <x>4671</x>
       <y>837</y>
       <w>108</w>
       <h>45</h>
@@ -1056,7 +1056,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4545</x>
+      <x>4671</x>
       <y>909</y>
       <w>108</w>
       <h>45</h>
@@ -1070,7 +1070,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4464</x>
+      <x>4590</x>
       <y>864</y>
       <w>99</w>
       <h>90</h>
@@ -1081,7 +1081,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4041</x>
+      <x>4167</x>
       <y>1053</y>
       <w>189</w>
       <h>27</h>
@@ -1092,7 +1092,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4212</x>
+      <x>4338</x>
       <y>1035</y>
       <w>90</w>
       <h>45</h>
@@ -1105,7 +1105,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4383</x>
+      <x>4509</x>
       <y>1035</y>
       <w>99</w>
       <h>45</h>
@@ -1119,7 +1119,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4554</x>
+      <x>4680</x>
       <y>990</y>
       <w>108</w>
       <h>45</h>
@@ -1133,7 +1133,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4293</x>
+      <x>4419</x>
       <y>1053</y>
       <w>108</w>
       <h>27</h>
@@ -1144,7 +1144,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4473</x>
+      <x>4599</x>
       <y>1008</y>
       <w>99</w>
       <h>72</h>
@@ -1155,7 +1155,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4545</x>
+      <x>4671</x>
       <y>774</y>
       <w>108</w>
       <h>45</h>
@@ -1169,7 +1169,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4464</x>
+      <x>4590</x>
       <y>783</y>
       <w>99</w>
       <h>108</h>
@@ -1180,7 +1180,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4554</x>
+      <x>4680</x>
       <y>1143</y>
       <w>108</w>
       <h>45</h>
@@ -1194,7 +1194,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4554</x>
+      <x>4680</x>
       <y>1062</y>
       <w>108</w>
       <h>45</h>
@@ -1208,7 +1208,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4473</x>
+      <x>4599</x>
       <y>1053</y>
       <w>99</w>
       <h>54</h>
@@ -1219,7 +1219,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4473</x>
+      <x>4599</x>
       <y>1053</y>
       <w>99</w>
       <h>135</h>
@@ -1230,7 +1230,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4203</x>
+      <x>4329</x>
       <y>1251</y>
       <w>90</w>
       <h>45</h>
@@ -1243,7 +1243,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4356</x>
+      <x>4482</x>
       <y>1251</y>
       <w>117</w>
       <h>45</h>
@@ -1257,7 +1257,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4554</x>
+      <x>4680</x>
       <y>1251</y>
       <w>108</w>
       <h>45</h>
@@ -1271,7 +1271,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4464</x>
+      <x>4590</x>
       <y>1269</y>
       <w>108</w>
       <h>27</h>
@@ -1282,7 +1282,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4284</x>
+      <x>4410</x>
       <y>1269</y>
       <w>90</w>
       <h>27</h>
@@ -1293,7 +1293,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4032</x>
+      <x>4158</x>
       <y>1269</y>
       <w>189</w>
       <h>27</h>
@@ -1304,7 +1304,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3321</x>
+      <x>3447</x>
       <y>1431</y>
       <w>36</w>
       <h>693</h>
@@ -1316,7 +1316,7 @@ halign=left
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3519</x>
+      <x>3645</x>
       <y>1431</y>
       <w>36</w>
       <h>684</h>
@@ -1328,7 +1328,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3294</x>
+      <x>3420</x>
       <y>1395</y>
       <w>90</w>
       <h>45</h>
@@ -1340,7 +1340,7 @@ halign=left
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3492</x>
+      <x>3618</x>
       <y>1395</y>
       <w>90</w>
       <h>45</h>
@@ -1353,7 +1353,7 @@ _:로그인 폼_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4302</x>
+      <x>4428</x>
       <y>1395</y>
       <w>108</w>
       <h>45</h>
@@ -1366,7 +1366,7 @@ _:로그인 컨트롤_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>5346</x>
+      <x>5472</x>
       <y>1395</y>
       <w>108</w>
       <h>45</h>
@@ -1379,7 +1379,7 @@ _:회원 정보_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3708</x>
+      <x>3834</x>
       <y>1395</y>
       <w>90</w>
       <h>45</h>
@@ -1392,7 +1392,7 @@ _:대여 처리 폼_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>5148</x>
+      <x>5274</x>
       <y>1395</y>
       <w>108</w>
       <h>45</h>
@@ -1406,7 +1406,7 @@ _:도서 정보_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4707</x>
+      <x>4833</x>
       <y>1395</y>
       <w>117</w>
       <h>45</h>
@@ -1420,7 +1420,7 @@ _:포인트 조회 컨트롤_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4500</x>
+      <x>4626</x>
       <y>1395</y>
       <w>108</w>
       <h>45</h>
@@ -1434,7 +1434,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4905</x>
+      <x>5031</x>
       <y>1395</y>
       <w>135</w>
       <h>45</h>
@@ -1448,7 +1448,7 @@ _:알림 서비스 컨트롤_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>4086</x>
+      <x>4212</x>
       <y>1395</y>
       <w>99</w>
       <h>45</h>
@@ -1461,7 +1461,7 @@ _:알림 서비스 폼_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>3915</x>
+      <x>4041</x>
       <y>1395</y>
       <w>108</w>
       <h>45</h>
@@ -1474,7 +1474,7 @@ _:포인트 조회 폼_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>4338</x>
+      <x>4464</x>
       <y>1467</y>
       <w>36</w>
       <h>72</h>
@@ -1485,7 +1485,7 @@ _:포인트 조회 폼_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3546</x>
+      <x>3672</x>
       <y>1485</y>
       <w>810</w>
       <h>36</h>
@@ -1497,7 +1497,7 @@ _:포인트 조회 폼_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4365</x>
+      <x>4491</x>
       <y>1503</y>
       <w>1035</w>
       <h>36</h>
@@ -1509,7 +1509,7 @@ _:포인트 조회 폼_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3735</x>
+      <x>3861</x>
       <y>1431</y>
       <w>36</w>
       <h>684</h>
@@ -1521,7 +1521,7 @@ _:포인트 조회 폼_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3960</x>
+      <x>4086</x>
       <y>1431</y>
       <w>27</w>
       <h>675</h>
@@ -1533,7 +1533,7 @@ _:포인트 조회 폼_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4347</x>
+      <x>4473</x>
       <y>1431</y>
       <w>27</w>
       <h>666</h>
@@ -1545,7 +1545,7 @@ _:포인트 조회 폼_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4545</x>
+      <x>4671</x>
       <y>1431</y>
       <w>27</w>
       <h>675</h>
@@ -1557,7 +1557,7 @@ _:포인트 조회 폼_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4131</x>
+      <x>4257</x>
       <y>1431</y>
       <w>27</w>
       <h>666</h>
@@ -1569,7 +1569,7 @@ _:포인트 조회 폼_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4761</x>
+      <x>4887</x>
       <y>1431</y>
       <w>27</w>
       <h>684</h>
@@ -1581,7 +1581,7 @@ _:포인트 조회 폼_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4968</x>
+      <x>5094</x>
       <y>1431</y>
       <w>36</w>
       <h>684</h>
@@ -1593,7 +1593,7 @@ _:포인트 조회 폼_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>5193</x>
+      <x>5319</x>
       <y>1431</y>
       <w>27</w>
       <h>675</h>
@@ -1605,7 +1605,7 @@ _:포인트 조회 폼_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>5391</x>
+      <x>5517</x>
       <y>1431</y>
       <w>27</w>
       <h>675</h>
@@ -1617,7 +1617,7 @@ _:포인트 조회 폼_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3519</x>
+      <x>3645</x>
       <y>1458</y>
       <w>36</w>
       <h>72</h>
@@ -1628,7 +1628,7 @@ _:포인트 조회 폼_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>5382</x>
+      <x>5508</x>
       <y>1503</y>
       <w>36</w>
       <h>45</h>
@@ -1639,7 +1639,7 @@ _:포인트 조회 폼_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3348</x>
+      <x>3474</x>
       <y>1458</y>
       <w>189</w>
       <h>36</h>
@@ -1651,7 +1651,7 @@ id, passwd</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3321</x>
+      <x>3447</x>
       <y>1458</y>
       <w>36</w>
       <h>36</h>
@@ -1662,7 +1662,7 @@ id, passwd</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3321</x>
+      <x>3447</x>
       <y>1557</y>
       <w>36</w>
       <h>90</h>
@@ -1673,7 +1673,7 @@ id, passwd</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3348</x>
+      <x>3474</x>
       <y>1557</y>
       <w>405</w>
       <h>36</h>
@@ -1685,7 +1685,7 @@ id, passwd</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>3735</x>
+      <x>3861</x>
       <y>1557</y>
       <w>36</w>
       <h>54</h>
@@ -1696,7 +1696,7 @@ id, passwd</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>3762</x>
+      <x>3888</x>
       <y>1575</y>
       <w>792</w>
       <h>36</h>
@@ -1708,7 +1708,7 @@ id, passwd</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>4536</x>
+      <x>4662</x>
       <y>1584</y>
       <w>36</w>
       <h>54</h>
@@ -1719,7 +1719,7 @@ id, passwd</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>4563</x>
+      <x>4689</x>
       <y>1602</y>
       <w>837</w>
       <h>36</h>
@@ -1731,7 +1731,7 @@ id, passwd</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>5382</x>
+      <x>5508</x>
       <y>1611</y>
       <w>36</w>
       <h>45</h>
@@ -1742,7 +1742,7 @@ id, passwd</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>765</x>
+      <x>891</x>
       <y>1305</y>
       <w>108</w>
       <h>45</h>
@@ -1755,7 +1755,7 @@ _:로그인 컨트롤_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>603</x>
+      <x>729</x>
       <y>1431</y>
       <w>216</w>
       <h>54</h>
@@ -1769,7 +1769,7 @@ lt=.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>423</x>
+      <x>549</x>
       <y>1863</y>
       <w>27</w>
       <h>405</h>
@@ -1781,7 +1781,7 @@ lt=.
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1116</x>
+      <x>1242</x>
       <y>1881</y>
       <w>108</w>
       <h>45</h>
@@ -1794,26 +1794,26 @@ _:도서 정보_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>585</x>
+      <x>711</x>
       <y>1881</y>
       <w>90</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>&lt;&lt;boundary&gt;&gt;
-_:대여 처리 폼_
+_:대여 대출 폼_
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>783</x>
+      <x>909</x>
       <y>1881</y>
       <w>108</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>&lt;&lt;controller&gt;&gt;
-_:도서 대여 컨트롤_
+_:도서 대출 컨트롤_
 
 </panel_attributes>
     <additional_attributes/>
@@ -1821,7 +1821,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>621</x>
+      <x>747</x>
       <y>1917</y>
       <w>27</w>
       <h>378</h>
@@ -1833,7 +1833,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>828</x>
+      <x>954</x>
       <y>1917</y>
       <w>27</w>
       <h>369</h>
@@ -1845,7 +1845,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1161</x>
+      <x>1287</x>
       <y>1917</y>
       <w>27</w>
       <h>369</h>
@@ -1857,7 +1857,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>414</x>
+      <x>540</x>
       <y>1989</y>
       <w>36</w>
       <h>90</h>
@@ -1868,7 +1868,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>441</x>
+      <x>567</x>
       <y>1989</y>
       <w>189</w>
       <h>36</h>
@@ -1880,10 +1880,10 @@ _:도서 대여 컨트롤_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>612</x>
+      <x>738</x>
       <y>1989</y>
       <w>36</w>
-      <h>90</h>
+      <h>243</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -1891,7 +1891,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>639</x>
+      <x>765</x>
       <y>2007</y>
       <w>198</w>
       <h>36</h>
@@ -1903,7 +1903,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>819</x>
+      <x>945</x>
       <y>2016</y>
       <w>36</w>
       <h>225</h>
@@ -1914,7 +1914,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
+      <x>972</x>
       <y>2034</y>
       <w>324</w>
       <h>36</h>
@@ -1926,7 +1926,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1152</x>
+      <x>1278</x>
       <y>2043</y>
       <w>36</w>
       <h>162</h>
@@ -1937,7 +1937,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>360</x>
+      <x>486</x>
       <y>1269</y>
       <w>72</w>
       <h>99</h>
@@ -1948,7 +1948,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>396</x>
+      <x>522</x>
       <y>1872</y>
       <w>72</w>
       <h>99</h>
@@ -1959,7 +1959,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1242</x>
+      <x>1368</x>
       <y>1881</y>
       <w>108</w>
       <h>45</h>
@@ -1972,7 +1972,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
+      <x>972</x>
       <y>2088</y>
       <w>198</w>
       <h>63</h>
@@ -1984,7 +1984,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
+      <x>972</x>
       <y>2142</y>
       <w>450</w>
       <h>36</h>
@@ -1996,7 +1996,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1287</x>
+      <x>1413</x>
       <y>1917</y>
       <w>27</w>
       <h>360</h>
@@ -2008,7 +2008,7 @@ _:회원 정보_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1278</x>
+      <x>1404</x>
       <y>2142</y>
       <w>36</w>
       <h>63</h>
@@ -2019,7 +2019,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
+      <x>972</x>
       <y>2169</y>
       <w>324</w>
       <h>36</h>
@@ -2031,7 +2031,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
+      <x>756</x>
       <y>2196</y>
       <w>207</w>
       <h>45</h>
@@ -2044,19 +2044,19 @@ lt=.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>423</x>
+      <x>549</x>
       <y>2421</y>
       <w>27</w>
-      <h>360</h>
+      <h>306</h>
     </coordinates>
     <panel_attributes>lt=.
 </panel_attributes>
-    <additional_attributes>10.0;380.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;320.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1116</x>
+      <x>1242</x>
       <y>2412</y>
       <w>108</w>
       <h>45</h>
@@ -2069,26 +2069,26 @@ _:도서 정보_
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>585</x>
+      <x>711</x>
       <y>2412</y>
       <w>90</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>&lt;&lt;boundary&gt;&gt;
-_:대여 처리 폼_
+_:반납 처리 폼_
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>783</x>
+      <x>909</x>
       <y>2412</y>
       <w>108</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>&lt;&lt;controller&gt;&gt;
-_:도서 대여 컨트롤_
+_:도서 반납 컨트롤_
 
 </panel_attributes>
     <additional_attributes/>
@@ -2096,43 +2096,43 @@ _:도서 대여 컨트롤_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>621</x>
+      <x>747</x>
       <y>2448</y>
       <w>27</w>
-      <h>360</h>
+      <h>279</h>
     </coordinates>
     <panel_attributes>lt=.
 </panel_attributes>
-    <additional_attributes>10.0;380.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;290.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>828</x>
+      <x>954</x>
       <y>2448</y>
       <w>27</w>
-      <h>351</h>
+      <h>279</h>
     </coordinates>
     <panel_attributes>lt=.
 </panel_attributes>
-    <additional_attributes>10.0;370.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;290.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1161</x>
+      <x>1287</x>
       <y>2448</y>
       <w>27</w>
-      <h>351</h>
+      <h>288</h>
     </coordinates>
     <panel_attributes>lt=.
 </panel_attributes>
-    <additional_attributes>10.0;370.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;300.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>414</x>
+      <x>540</x>
       <y>2502</y>
       <w>36</w>
       <h>36</h>
@@ -2143,22 +2143,22 @@ _:도서 대여 컨트롤_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>441</x>
+      <x>567</x>
       <y>2502</y>
       <w>189</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-책 번호 , 회원 id</panel_attributes>
+책 번호</panel_attributes>
     <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>612</x>
+      <x>738</x>
       <y>2502</y>
       <w>36</w>
-      <h>90</h>
+      <h>153</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -2166,7 +2166,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>639</x>
+      <x>765</x>
       <y>2520</y>
       <w>198</w>
       <h>36</h>
@@ -2178,7 +2178,7 @@ _:도서 대여 컨트롤_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>819</x>
+      <x>945</x>
       <y>2529</y>
       <w>36</w>
       <h>126</h>
@@ -2189,10 +2189,10 @@ _:도서 대여 컨트롤_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1152</x>
+      <x>1278</x>
       <y>2529</y>
       <w>36</w>
-      <h>162</h>
+      <h>81</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -2200,18 +2200,18 @@ _:도서 대여 컨트롤_
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>387</x>
-      <y>2394</y>
+      <x>513</x>
+      <y>2385</y>
       <w>81</w>
       <h>99</h>
     </coordinates>
-    <panel_attributes>:학생 회원</panel_attributes>
+    <panel_attributes>:관리자 회원</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>1242</x>
+      <x>1368</x>
       <y>2412</y>
       <w>108</w>
       <h>45</h>
@@ -2224,31 +2224,31 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
+      <x>972</x>
       <y>2538</y>
       <w>324</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-반납 가능 여부 묻기(회원id,책번호)</panel_attributes>
+대여자 id 요청(책번호)</panel_attributes>
     <additional_attributes>340.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1287</x>
+      <x>1413</x>
       <y>2448</y>
       <w>27</w>
-      <h>342</h>
+      <h>288</h>
     </coordinates>
     <panel_attributes>lt=.
 </panel_attributes>
-    <additional_attributes>10.0;360.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;300.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1278</x>
+      <x>1404</x>
       <y>2574</y>
       <w>36</w>
       <h>63</h>
@@ -2259,20 +2259,20 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>621</x>
+      <x>765</x>
       <y>2619</y>
-      <w>216</w>
+      <w>198</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>반납 성공 출력
 lt=.
 </panel_attributes>
-    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
+      <x>972</x>
       <y>2601</y>
       <w>450</w>
       <h>36</h>
@@ -2284,7 +2284,7 @@ lt=.
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>909</x>
+      <x>1035</x>
       <y>2232</y>
       <w>90</w>
       <h>54</h>
@@ -2298,7 +2298,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>900</x>
+      <x>1026</x>
       <y>2178</y>
       <w>63</w>
       <h>72</h>
@@ -2311,7 +2311,7 @@ lt=.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>846</x>
+      <x>972</x>
       <y>2565</y>
       <w>324</w>
       <h>36</h>
@@ -2323,7 +2323,7 @@ lt=.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>342</x>
+      <x>468</x>
       <y>2844</y>
       <w>27</w>
       <h>351</h>
@@ -2335,7 +2335,7 @@ lt=.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>540</x>
+      <x>666</x>
       <y>2862</y>
       <w>27</w>
       <h>333</h>
@@ -2347,7 +2347,7 @@ lt=.
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>936</x>
+      <x>1062</x>
       <y>2835</y>
       <w>108</w>
       <h>45</h>
@@ -2360,7 +2360,7 @@ _:회원 정보_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>756</x>
+      <x>882</x>
       <y>2898</y>
       <w>36</w>
       <h>243</h>
@@ -2371,7 +2371,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>558</x>
+      <x>684</x>
       <y>2916</y>
       <w>216</w>
       <h>36</h>
@@ -2383,7 +2383,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>783</x>
+      <x>909</x>
       <y>2934</y>
       <w>207</w>
       <h>36</h>
@@ -2395,7 +2395,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>765</x>
+      <x>891</x>
       <y>2862</y>
       <w>27</w>
       <h>333</h>
@@ -2407,7 +2407,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>981</x>
+      <x>1107</x>
       <y>2871</y>
       <w>27</w>
       <h>324</h>
@@ -2419,7 +2419,7 @@ _:회원 정보_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>531</x>
+      <x>657</x>
       <y>2889</y>
       <w>36</w>
       <h>162</h>
@@ -2430,7 +2430,7 @@ _:회원 정보_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>972</x>
+      <x>1098</x>
       <y>2934</y>
       <w>36</w>
       <h>45</h>
@@ -2441,7 +2441,7 @@ _:회원 정보_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>333</x>
+      <x>459</x>
       <y>2889</y>
       <w>36</w>
       <h>153</h>
@@ -2452,7 +2452,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>558</x>
+      <x>684</x>
       <y>2952</y>
       <w>216</w>
       <h>54</h>
@@ -2466,7 +2466,7 @@ lt=.
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>306</x>
+      <x>432</x>
       <y>2790</y>
       <w>90</w>
       <h>99</h>
@@ -2477,7 +2477,7 @@ lt=.
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>504</x>
+      <x>630</x>
       <y>2826</y>
       <w>90</w>
       <h>45</h>
@@ -2490,7 +2490,7 @@ lt=.
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>729</x>
+      <x>855</x>
       <y>2826</y>
       <w>90</w>
       <h>45</h>
@@ -2503,7 +2503,7 @@ lt=.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>486</x>
       <y>2979</y>
       <w>189</w>
       <h>36</h>
@@ -2515,7 +2515,7 @@ lt=.
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>486</x>
       <y>2889</y>
       <w>189</w>
       <h>36</h>
@@ -2527,7 +2527,7 @@ id 선택하기</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>558</x>
+      <x>684</x>
       <y>3006</y>
       <w>216</w>
       <h>36</h>
@@ -2539,7 +2539,7 @@ id 선택하기</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>783</x>
+      <x>909</x>
       <y>3033</y>
       <w>198</w>
       <h>63</h>
@@ -2551,7 +2551,7 @@ id 선택하기</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>513</x>
+      <x>639</x>
       <y>3339</y>
       <w>90</w>
       <h>45</h>
@@ -2564,7 +2564,7 @@ id 선택하기</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>720</x>
+      <x>846</x>
       <y>3339</y>
       <w>117</w>
       <h>45</h>
@@ -2578,18 +2578,18 @@ id 선택하기</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>315</x>
+      <x>450</x>
       <y>3303</y>
-      <w>90</w>
+      <w>72</w>
       <h>99</h>
     </coordinates>
-    <panel_attributes>:관리자 회원</panel_attributes>
+    <panel_attributes>:학생 회원</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
+      <x>477</x>
       <y>3357</y>
       <w>27</w>
       <h>225</h>
@@ -2601,7 +2601,7 @@ id 선택하기</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>549</x>
+      <x>675</x>
       <y>3375</y>
       <w>27</w>
       <h>198</h>
@@ -2613,7 +2613,7 @@ id 선택하기</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>774</x>
+      <x>900</x>
       <y>3375</y>
       <w>27</w>
       <h>198</h>
@@ -2625,7 +2625,7 @@ id 선택하기</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>990</x>
+      <x>1116</x>
       <y>3375</y>
       <w>27</w>
       <h>198</h>
@@ -2637,7 +2637,7 @@ id 선택하기</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>945</x>
+      <x>1071</x>
       <y>3339</y>
       <w>108</w>
       <h>45</h>
@@ -2650,7 +2650,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>369</x>
+      <x>495</x>
       <y>3402</y>
       <w>189</w>
       <h>36</h>
@@ -2662,7 +2662,7 @@ _:회원 정보_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>342</x>
+      <x>468</x>
       <y>3393</y>
       <w>36</w>
       <h>54</h>
@@ -2673,7 +2673,7 @@ _:회원 정보_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>540</x>
+      <x>666</x>
       <y>3393</y>
       <w>36</w>
       <h>135</h>
@@ -2684,7 +2684,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>567</x>
+      <x>693</x>
       <y>3420</y>
       <w>216</w>
       <h>36</h>
@@ -2696,7 +2696,7 @@ _:회원 정보_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>765</x>
+      <x>891</x>
       <y>3411</y>
       <w>36</w>
       <h>117</h>
@@ -2707,7 +2707,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>792</x>
+      <x>918</x>
       <y>3438</y>
       <w>207</w>
       <h>36</h>
@@ -2719,7 +2719,7 @@ _:회원 정보_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>981</x>
+      <x>1107</x>
       <y>3429</y>
       <w>36</w>
       <h>63</h>
@@ -2730,7 +2730,7 @@ _:회원 정보_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>567</x>
+      <x>693</x>
       <y>3483</y>
       <w>216</w>
       <h>54</h>
@@ -2740,5 +2740,294 @@ _:회원 정보_
 lt=.
 </panel_attributes>
     <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>3852</y>
+      <w>126</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>대출
+--
+
+--
+포인트 조정 요청()
+대출 실시()
+대출 가능 여부()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>3807</y>
+      <w>135</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>학생 회원
+--
+ID
+passwd
+대여 정보
+포인트 정보
+--
+대여하기()
+포인트 사용 요청()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>4212</y>
+      <w>135</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>교직원 회원
+--
+ID
+passwd
+--
+반납 요청()
+알림 요청()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1413</x>
+      <y>4122</y>
+      <w>99</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>반납 완료
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1359</x>
+      <y>4149</y>
+      <w>72</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>60.0;140.0;10.0;140.0;10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1278</x>
+      <y>4203</y>
+      <w>108</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+m2=&lt;&lt;동적&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1413</x>
+      <y>4248</y>
+      <w>99</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>대여중
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>225</x>
+      <y>3996</y>
+      <w>99</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>알림
+--
+메시지
+--
+메시지 입력()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1413</x>
+      <y>4329</y>
+      <w>108</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>도서명
+--
+
+--
+대출 가능 여부()
+반납 가능 여부()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>4041</y>
+      <w>126</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>책
+--
+책번호
+책이름
+대여자 id
+대여 기간
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>3897</y>
+      <w>180</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>4266</y>
+      <w>180</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>4230</y>
+      <w>126</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>반납
+--
+
+--
+포인트 조정 요청()
+반납 실시()
+반납 가능 여부()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>4050</y>
+      <w>216</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=1..*</panel_attributes>
+    <additional_attributes>220.0;250.0;10.0;250.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1179</x>
+      <y>4059</y>
+      <w>126</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>포인트
+--
+포인트 조정()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>3897</y>
+      <w>324</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=1..*</panel_attributes>
+    <additional_attributes>340.0;210.0;260.0;210.0;260.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>4077</y>
+      <w>324</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>
+m1=1..*
+</panel_attributes>
+    <additional_attributes>10.0;220.0;260.0;220.0;260.0;10.0;340.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>3852</y>
+      <w>216</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>m1=1..*
+m2=1..*</panel_attributes>
+    <additional_attributes>220.0;10.0;10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>3825</y>
+      <w>666</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;720.0;10.0;720.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>819</x>
+      <y>3933</y>
+      <w>45</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>4122</y>
+      <w>45</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>m1=0..*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
