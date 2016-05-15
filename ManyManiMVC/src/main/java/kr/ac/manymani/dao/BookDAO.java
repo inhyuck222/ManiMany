@@ -3,14 +3,14 @@ package kr.ac.manymani.dao;
 import java.util.List;
 
 import javax.sql.DataSource;
-import kr.ac.manymani.domain.Member;
+import kr.ac.manymani.domain.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 //@Componentï¿½ë’— ï¿½ì”  ï¿½ê²¢ï¿½ì˜’ï¿½ë’ª?‘œï¿? ï¿½ì˜„ï¿½ë£ï¿½ì‘æ¿¡ï¿½ ?®?‰?‘æ¿¡ï¿½ ï¿½ê½•ï¿½ì ™ï¿½ë¹ ä»¥ï¿½ï¿½ë–.
-@Component("memberDAO")
-public class MemberDAO {
+@Component("bookDAO")
+public class BookDAO {
 
 	private JdbcTemplate jdbcTemplateObject;
 
@@ -21,33 +21,33 @@ public class MemberDAO {
 	}
 
 	public int getRowCount() {
-		String sqlStatement = "select count(*) from member";
+		String sqlStatement = "select count(*) from book";
 		return jdbcTemplateObject.queryForObject(sqlStatement, Integer.class);// ï¿½ë¸¯ï¿½êµ¹ï¿½ì“½
 																				// ï¿½ì‚¤?‡‰?š¯? ¥ï¿½ë“ƒ
 
 	}
 
 	// Querying and returning a single object
-	public Member getMember(String name) {
+	public Book selectBookInfo(String bookNumber) {
 
-		String sqlStatement = "select * from member where email=?";
+		String sqlStatement = "select * from book where bookNumber=?";
 
-		return jdbcTemplateObject.queryForObject(sqlStatement, new Object[] { name }, new MemberMapper());
+		return jdbcTemplateObject.queryForObject(sqlStatement, new Object[] { bookNumber }, new BookMapper());
 
 	}
 
 	// Querying and returning multiple object
-	public List<Member> getMembers() {
+	public List<Book> getBooks() {
 
-		String sqlStatement = "select * from member";
+		String sqlStatement = "select * from book";
 
-		return jdbcTemplateObject.query(sqlStatement, new MemberMapper()); // Anonymous
+		return jdbcTemplateObject.query(sqlStatement, new BookMapper()); // Anonymous
 																			// Classes
 
 	}
 	
-
-	public boolean insert(Member member){
+/*
+	public boolean insert(Book book){
 		
 		 String memberId = member.getMemberId();
 		 String password = member.getPassword();
@@ -61,20 +61,21 @@ public class MemberDAO {
 		return (jdbcTemplateObject.update(sqlStatement, new Object[]{memberId, password, bookName, lendingTerm, point, email})==1);
 	}
 
-	
-	public boolean update(Member member){
+	*/
+	public boolean update(Book book){
 		
-		 String memberId = member.getMemberId();
-		 String password = member.getPassword();
-		 String bookName = member.getBookName();
-		 String lendingTerm = member.getLendingTerm();
-		 int point = member.getPoint();
-		 String email = member.getEmail();
+		 String bookNumber = book.getBookNumber(); 
+		 String bookName = book.getBookName();
+		 String borrowAvailability = book.getBorrowAvailability();
+		 String lendingTerm = book.getLendingTerm();
+		 String borrowerId = book.getBorrowerId();
 		
-		String sqlStatement="update member set memberId=?, password=?, bookName=?, lendingTerm=?, point=?, email=? where id=?";
-		return (jdbcTemplateObject.update(sqlStatement, new Object[]{memberId, password, bookName, lendingTerm, point, email})==1);
+		String sqlStatement="update member set bookNumber=?, bookName=?, borrowAvailability=?, lendingTerm=?, borrowerId=? where id=?";
+		return (jdbcTemplateObject.update(sqlStatement, new Object[]{bookNumber, bookName, borrowAvailability, lendingTerm, borrowerId})==1);
 	}
+
 	
+	/*	
 	public boolean delete (int id) {
 		
 		String sqlstatement="delete from member where id=?";
@@ -82,6 +83,6 @@ public class MemberDAO {
 	}
 	
 	
-
+*/
 	
 }

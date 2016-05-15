@@ -1,4 +1,4 @@
-package kr.ac.manymani.dao;
+package kr.ac.manymani.domain;
 
 public class Member {
 

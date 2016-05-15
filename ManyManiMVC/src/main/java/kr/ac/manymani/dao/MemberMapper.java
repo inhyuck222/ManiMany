@@ -5,7 +5,7 @@ package kr.ac.manymani.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+import kr.ac.manymani.domain.Member;
 import org.springframework.jdbc.core.RowMapper;
 
 public class MemberMapper implements RowMapper<Member> {

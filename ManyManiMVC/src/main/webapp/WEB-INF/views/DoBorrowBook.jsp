@@ -1,19 +1,22 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<title>Home</title>
+
+
+<title>Insert title here</title>
 </head>
 <body>
-	<!---------------------------------ë„¤ë¹„ê²Œì´ì…˜ ë°” ì‹œìž‘-------------------------  -->
+
+	<!---------------------------------³×ºñ°ÔÀÌ¼Ç ¹Ù ½ÃÀÛ-------------------------  -->
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -22,8 +25,8 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="http://localhost:8080/ManyManiMVC">Home</a></li>
-      <li><a href="/ManyManiMVC/borrowBook">ëŒ€ì—¬í•˜ê¸°</a></li>
-      <li><a href="/ManyManiMVC/returnBook">ë°˜ë‚©í•˜ê¸°</a></li>
+      <li><a href="/ManyManiMVC/borrowBook">´ë¿©ÇÏ±â</a></li>
+      <li><a href="/ManyManiMVC/returnBook">¹Ý³³ÇÏ±â</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
   <!--     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
@@ -32,21 +35,21 @@
   </div>
 </nav>
  
- 	<!---------------------------------ë„¤ë¹„ê²Œì´ì…˜ ë°” ë-------------------------  -->
+ 	<!---------------------------------³×ºñ°ÔÀÌ¼Ç ¹Ù ³¡-------------------------  -->
+ 	
+ 	<div class="container">
+		<h1>»ç¿ëÇÒ Æ÷ÀÎÆ®¸¦ ÀÔ·ÂÇÏ¼¼¿ä.</h1>
+		<hr />
 
-<div class="container">
-  <div class="jumbotron">
-    <h1>Under construction ê³µì‚¬ì¤‘</h1>      
-    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
-  </div>
-  <p>This is some text.</p>      
-  <p>This is another text.</p>  
-  
-  
-  
+		<form action="/Day16/j03_login02_DB.jsp" method="post">
+			»ç¿ëÇÒ Æ÷ÀÎÆ® : <input type="text" name="point" /> <br /> 
+		</form>
+	<c:out value="${ironman1}"></c:out>
 
-<p><a href="/ManyManiMVC/members">Show Current members</a>
-<p><a href="/ManyManiMVC/createMember2">Add a new member</a>  
+
+	</div>
+
+
 
 </body>
 </html>
