@@ -34,16 +34,26 @@ public class BorrowBookController {
 
 		Book book = borrowService.checkBorrow(bookNumber);
 		if (book.getBorrowAvailability().equals("void") ) {
+			//책을 빌릴 수 있는 상태입 
+			
 			model.addAttribute("ironman1", book.getBorrowAvailability());
 			System.out.println("모델 아이언1");
 			return "DoBorrowBook";
 
 		} else {
+			//책을 빌릴수 없는 상태임 
+			
 			model.addAttribute("ironman2", book.getBorrowAvailability());
 			System.out.println("모델 아이언2");
-			return "borrowBook";
+			return "failBorrowBook";
 		}
 
+	}
+	
+	@RequestMapping("/failBorrowBook")
+	public String showfailBorrowBookPage() {
+
+		return "failBorrowBook";
 	}
 
 }

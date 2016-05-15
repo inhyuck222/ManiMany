@@ -37,36 +37,14 @@
 		</ul>
 	</div>
 	</nav>
-<!---------------------------------네비게이션 바 끝-------------------------  -->
-<%-- 
-	<%
-	response.getCharacterEncoding()
-		String str=${ironman2};
-
-		if (str.equals()) {
-	%>
-	<script language="javascript">
-		alert("URL 주소창에 주소를 직접 입력해서 접근하셨습니다.\n\n정상적인 경로를 통해 다시 접근해 주십시오.");
-		document.location.href = "../index.jsp";
-	</script>
-	<%
-		return;
-		}
-		%>
- --%>
-
-	<div class="container">
-		<h1>대여할 책 번호를 입력하세요.</h1>
-		<hr />
-
-		<form action="/ManyManiMVC/DoBorrowBook" method="post">
-			책 번호 : <input type="text" name="bookNumber" /> <br />
-		</form>
+	<!---------------------------------네비게이션 바 끝-------------------------  -->
 
 
-	<c:out value="${ironman2}"></c:out>
 
-	</div>
+		<script type="text/javascript">
+			alert("현재 대여중인 책 입니다.");
+			location.href="/ManyManiMVC/borrowBook";		
+		</script>
 
 </body>
 </html>
