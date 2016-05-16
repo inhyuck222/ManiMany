@@ -2,6 +2,8 @@ package kr.ac.manymani.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -31,21 +33,33 @@ public class LoginController {
 	model.addAttribute("members", members);
 		
 	*/
-	@RequestMapping("/dologin")
-	public String createMember(Model model){
+	@RequestMapping("/doLogin")
+	public String loginProcess(Model model,HttpServletRequest request){
 		
-		List<Member> members = loginservice.checkMember();
-		model.addAttribute("members", members);
+		String tid = request.getParameter("id");
+		String tpassword = request.getParameter("password");
+		
+		Member member=loginservice.checkMember2(tid,tpassword);
 		
 		
-	return "dologin";
+		
+		if(member == null){		
+				return "home";
+			
+		}else{		
+		model.addAttribute("loginSucessObject", member);
+		
+		
+			return "returnBook";
+		}
+
 		
 	}
 	
 
 	@RequestMapping("/members")
 	public String showMembers(Model model){
-		
+
 		List<Member> members = loginservice.checkMember();
 		model.addAttribute("members", members);
 		

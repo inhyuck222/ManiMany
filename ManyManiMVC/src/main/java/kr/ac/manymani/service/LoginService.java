@@ -22,7 +22,19 @@ public class LoginService {
 		return memberDAO.getMembers();
 	}
 
+	public Member checkMember2(String tid, String tpassword){	
+		
+		Member member=memberDAO.getMember(tid);
+		String dbpassword = member.getPassword();
+		if(dbpassword.equals(tpassword)){
+			
+			return member;			
+		}
+		else{
+		
+			return null;
+		}
 
-
+	}
 
 }

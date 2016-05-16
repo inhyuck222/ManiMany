@@ -40,10 +40,11 @@
 	<div class="container">
 		<h2>로그인 Form 화면 - 아이디, 패스워드 입력</h2>
 		<hr />
-
-		<form action="/Day16/j03_login02_DB.jsp" method="post">
-			아이디 : <input type="text" name="id" /> <br /> 패스워드 : <input
-				type="text" name="pw" /> <br /> <input type="submit" value="로그인하기" />
+			
+		<form action="doLogin" method="GET">
+			아이디 : <input type="text" name="id" /> <br /> 
+			패스워드 : <input type="text" name="password" /> <br /> 
+			<input type="submit" value="로그인하기" />
 		</form>
 
 	</div>

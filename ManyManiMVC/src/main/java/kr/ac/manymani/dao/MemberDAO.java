@@ -30,7 +30,7 @@ public class MemberDAO {
 	// Querying and returning a single object
 	public Member getMember(String name) {
 
-		String sqlStatement = "select * from member where email=?";
+		String sqlStatement = "select * from member where memberId=?";
 
 		return jdbcTemplateObject.queryForObject(sqlStatement, new Object[] { name }, new MemberMapper());
 
