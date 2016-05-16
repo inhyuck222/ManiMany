@@ -2,6 +2,7 @@ package kr.ac.manymani.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,7 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import kr.ac.manymani.domain.Book;
-import kr.ac.manymani.service.BorrowService;
+import kr.ac.manymani.domain.Member;
 import kr.ac.manymani.service.ReturnService;
 
 
@@ -36,10 +37,10 @@ public class ReturnBookController {
 	}
 	
 	@RequestMapping("/DoReturnBook")
-	public String DoReturnBookPage(HttpServletRequest request, HttpServletResponse response, Model model) {
+	public String DoReturnBookPage(HttpServletRequest request, HttpSession session, HttpServletResponse response, Model model) {
 
 		String bookNumber = request.getParameter("booknumber");
-		System.out.println(bookNumber);
+		Member member = (Member)session.getAttribute("memberInfo");
 		Book book = returnService.returnBook(bookNumber);
 		
 		return null;

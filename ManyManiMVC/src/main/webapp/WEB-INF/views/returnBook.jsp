@@ -15,6 +15,8 @@
 <script
 	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+<%@ page session="true" %>
+
 <title>Return Page</title>
 </head>
 <body>
@@ -47,6 +49,8 @@
 
 	</div>
 	<c:out value="${loginSucessObject}"></c:out>
+	<p>세션 이름 : <b>${sessionScope.memberInfo.memberId}</b></p>
+
 	
 </body>
 </html>

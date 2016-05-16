@@ -3,6 +3,7 @@ package kr.ac.manymani.controller;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,13 +23,13 @@ public class LoginController {
 		this.loginservice = loginservice;	
 	}
 	
-	/*
+	
 	@RequestMapping("/login")
 	public String showLoginPage(Model model){
 	
 		return "login";
 	}
-	*/
+	
 	
 	/*	
 	List<Member> members = loginservice.checkMember();
@@ -36,17 +37,18 @@ public class LoginController {
 	*/
 	
 	@RequestMapping("/doLogin")
-	public String loginProcess(Model model, HttpServletRequest request){
+	public String loginProcess(Model model, HttpSession session, HttpServletRequest request){
 		
 		String tid = request.getParameter("id");
 		String tpassword = request.getParameter("password");
 		
 		Member member=loginservice.checkMember2(tid,tpassword);
-				
-		if(member == null){		
-				return "home";
-		}else{
+		
+		if(member == null){
+			return "home";
+		} else {
 			model.addAttribute("loginSucessObject", member);
+			session.setAttribute("memberInfo", member);
 			return "returnBook";
 		}		
 	}	
@@ -60,11 +62,8 @@ public class LoginController {
 		return "members";
 	}
 	
-	
-	
 	@RequestMapping("/logout")
 	public String showLogoutPage(Model model){
-	
 		//로그아웃시 홈페이지로 이동시킨다.
 		return "home";
 	}
