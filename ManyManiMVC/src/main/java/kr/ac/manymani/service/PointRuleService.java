@@ -21,6 +21,9 @@ public class PointRuleService implements RuleService{
 	@Override
 	public int caclulateReturnPoint(Object member) {
 		// TODO Auto-generated method stub
+	
+		
+		
 		return 0;
 	}
 	

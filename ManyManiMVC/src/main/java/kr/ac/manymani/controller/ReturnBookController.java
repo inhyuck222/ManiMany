@@ -31,9 +31,19 @@ public class ReturnBookController {
 	}*/
 
 	@RequestMapping("/returnBook")
-	public String showReturnPage(){
-	
-		return "returnBook";
+	public String showReturnPage(HttpSession session){
+		String rcv = (String) session.getAttribute("logOk");
+
+		if (rcv != null){
+			
+			return "returnBook";
+			
+		}else{
+			
+			return "guideLogin";
+		
+		}
+		
 	}
 	
 	@RequestMapping("/DoReturnBook")

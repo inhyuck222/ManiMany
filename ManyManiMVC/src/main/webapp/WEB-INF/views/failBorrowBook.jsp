@@ -1,10 +1,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,31 +18,15 @@
 <title>Borrow Page</title>
 </head>
 <body>
-	<!---------------------------------³×ºñ°ÔÀÌ¼Ç ¹Ù ½ÃÀÛ-------------------------  -->
 
-	<nav class="navbar navbar-inverse">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="http://localhost:8080/ManyManiMVC/#">ManyManiSystem</a>
-		</div>
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="http://localhost:8080/ManyManiMVC">Home</a></li>
-			<li><a href="/ManyManiMVC/borrowBook">´ë¿©ÇÏ±â</a></li>
-			<li><a href="/ManyManiMVC/returnBook">¹İ³³ÇÏ±â</a></li>
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<!--     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
-			<li><a href="/ManyManiMVC/login"><span
-					class="glyphicon glyphicon-log-in"></span> Login</a></li>
-		</ul>
-	</div>
-	</nav>
-	<!---------------------------------³×ºñ°ÔÀÌ¼Ç ¹Ù ³¡-------------------------  -->
+	<!---------------------------------ë„¤ë¹„ê²Œì´ì…˜ ë°” ì‹œì‘-------------------------  -->
+		<jsp:include page="topMenu.jsp" flush="false"></jsp:include>
+ 	<!---------------------------------ë„¤ë¹„ê²Œì´ì…˜ ë°” ë-------------------------  -->
 
 
 
 		<script type="text/javascript">
-			alert("ÇöÀç ´ë¿©ÁßÀÎ Ã¥ ÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·Â ÇÏ¼¼¿ä");
+			alert("í˜„ì¬ ëŒ€ì—¬ì¤‘ì¸ ì±… ì…ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥ í•˜ì„¸ìš”");
 			location.href="/ManyManiMVC/borrowBook";		
 		</script>
 

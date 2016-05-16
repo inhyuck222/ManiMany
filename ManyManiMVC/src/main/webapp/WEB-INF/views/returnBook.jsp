@@ -1,10 +1,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,24 +20,10 @@
 <title>Return Page</title>
 </head>
 <body>
-	<!---------------------------------네비게이션 바 시작-------------------------  -->
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost:8080/ManyManiMVC/#">ManyManiSystem</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="http://localhost:8080/ManyManiMVC">Home</a></li>
-      <li><a href="/ManyManiMVC/borrowBook">대여하기</a></li>
-      <li><a href="/ManyManiMVC/returnBook">반납하기</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-  <!--     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
-      <li><a href="/ManyManiMVC/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
+	<!---------------------------------네비게이션 바 시작-------------------------  -->
+		<jsp:include page="topMenu.jsp" flush="false"></jsp:include>
+ 	<!---------------------------------네비게이션 바 끝-------------------------  -->
  
 	<div class="container">
 		<h1>반납하실 책 번호를 입력하세요.</h1>
@@ -48,8 +34,7 @@
 		</form>
 
 	</div>
-	<c:out value="${loginSucessObject}"></c:out>
-	<p>세션 이름 : <b>${sessionScope.memberInfo.memberId}</b></p>
+	
 
 	
 </body>

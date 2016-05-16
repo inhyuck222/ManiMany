@@ -30,12 +30,6 @@ public class LoginController {
 		return "login";
 	}
 	
-	
-	/*	
-	List<Member> members = loginservice.checkMember();
-	model.addAttribute("members", members);
-	*/
-	
 	@RequestMapping("/doLogin")
 	public String loginProcess(Model model, HttpSession session, HttpServletRequest request){
 		
@@ -45,15 +39,44 @@ public class LoginController {
 		Member member=loginservice.checkMember2(tid,tpassword);
 		
 		if(member == null){
-			return "home";
+			
+			return "failLogin";
+	
 		} else {
+			
 			model.addAttribute("loginSucessObject", member);
-			session.setAttribute("memberInfo", member);
-			return "returnBook";
+			session.setAttribute("loginMember", member);		
+			session.setAttribute("logOk", member.getMemberId());
+	
+			return "home";
 		}		
 	}	
 
-	@RequestMapping("/members")
+	
+	@RequestMapping("/logout")
+	public String showLogoutPage(){
+		//로그아웃시 홈페이지로 이동시킨다.
+		return "logout";
+	}
+
+	
+	@RequestMapping("/guideLogin")
+	public String showGuideLoginPage(){
+		//로그아웃시 홈페이지로 이동시킨다.
+		return "guideLogin";
+	}
+	
+	
+	
+	@RequestMapping("/failLogin")
+	public void showFailLoginPage(){
+		//로그인 실패 페이지 이동시킨다.
+		System.out.println("로그인실패 메서드  작동");
+		
+	}
+	
+	
+	/*	@RequestMapping("/members")
 	public String showMembers(Model model){
 
 		List<Member> members = loginservice.checkMember();
@@ -61,12 +84,7 @@ public class LoginController {
 		
 		return "members";
 	}
+	*/
 	
-	@RequestMapping("/logout")
-	public String showLogoutPage(Model model){
-		//로그아웃시 홈페이지로 이동시킨다.
-		return "home";
-	}
-
 	
 }

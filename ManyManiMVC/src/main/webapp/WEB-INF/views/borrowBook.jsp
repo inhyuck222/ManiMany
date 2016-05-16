@@ -1,10 +1,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,55 +18,24 @@
 <title>Borrow Page</title>
 </head>
 <body>
-	<!---------------------------------³×ºñ°ÔÀÌ¼Ç ¹Ù ½ÃÀÛ-------------------------  -->
+	<!---------------------------------ë„¤ë¹„ê²Œì´ì…˜ ë°” ì‹œì‘-------------------------  -->
+		<jsp:include page="topMenu.jsp" flush="false"></jsp:include>
+ 	<!---------------------------------ë„¤ë¹„ê²Œì´ì…˜ ë°” ë-------------------------  -->
 
-	<nav class="navbar navbar-inverse">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="http://localhost:8080/ManyManiMVC/#">ManyManiSystem</a>
-		</div>
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="http://localhost:8080/ManyManiMVC">Home</a></li>
-			<li><a href="/ManyManiMVC/borrowBook">´ë¿©ÇÏ±â</a></li>
-			<li><a href="/ManyManiMVC/returnBook">¹İ³³ÇÏ±â</a></li>
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<!--     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
-			<li><a href="/ManyManiMVC/login"><span
-					class="glyphicon glyphicon-log-in"></span> Login</a></li>
-		</ul>
-	</div>
-	</nav>
-<!---------------------------------³×ºñ°ÔÀÌ¼Ç ¹Ù ³¡-------------------------  -->
-<%-- 
-	<%
-	response.getCharacterEncoding()
-		String str=${ironman2};
-
-		if (str.equals()) {
-	%>
-	<script language="javascript">
-		alert("URL ÁÖ¼ÒÃ¢¿¡ ÁÖ¼Ò¸¦ Á÷Á¢ ÀÔ·ÂÇØ¼­ Á¢±ÙÇÏ¼Ì½À´Ï´Ù.\n\nÁ¤»óÀûÀÎ °æ·Î¸¦ ÅëÇØ ´Ù½Ã Á¢±ÙÇØ ÁÖ½Ê½Ã¿À.");
-		document.location.href = "../index.jsp";
-	</script>
-	<%
-		return;
-		}
-		%>
- --%>
 
 	<div class="container">
-		<h1>´ë¿©ÇÒ Ã¥ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.</h1>
+		<h1>ëŒ€ì—¬í•  ì±… ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”.</h1>
 		<hr />
 
 		<form action="/ManyManiMVC/DoBorrowBook" method="post">
-			Ã¥ ¹øÈ£ : <input type="text" name="bookNumber" /> <br />
+			ì±… ë²ˆí˜¸ : <input type="text" name="bookNumber" /> <br />
 		</form>
 
 
-	<c:out value="${ironman2}"></c:out>
-
 	</div>
+	
+	  <c:out value="${loginSucessObject}"></c:out>
+	<p>ì„¸ì…˜ ì´ë¦„ : <b>${sessionScope.loginMember.memberId}</b></p>
 
 </body>
 </html>

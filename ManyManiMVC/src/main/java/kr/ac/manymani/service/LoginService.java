@@ -24,7 +24,15 @@ public class LoginService {
 
 	public Member checkMember2(String tid, String tpassword){	
 		
+	
+		
 		Member member=memberDAO.getMember(tid);
+		if(member==null){
+			
+			return null;
+		
+		}else{
+		
 		String dbpassword = member.getPassword();
 		if(dbpassword.equals(tpassword)){
 			
@@ -34,6 +42,7 @@ public class LoginService {
 		
 			return null;
 		}
+	}
 
 	}
 

@@ -14,24 +14,7 @@
 </head>
 <body>
 	<!---------------------------------네비게이션 바 시작-------------------------  -->
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="http://localhost:8080/ManyManiMVC/#">ManyManiSystem</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="http://localhost:8080/ManyManiMVC">Home</a></li>
-      <li><a href="/ManyManiMVC/borrowBook">대여하기</a></li>
-      <li><a href="/ManyManiMVC/returnBook">반납하기</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-  <!--     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
-      <li><a href="/ManyManiMVC/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
- 
+		<jsp:include page="topMenu.jsp" flush="false"></jsp:include>
  	<!---------------------------------네비게이션 바 끝-------------------------  -->
 
 <div class="container">
@@ -42,11 +25,15 @@
   <p>This is some text.</p>      
   <p>This is another text.</p>  
   
-  
+
   
 
 <p><a href="/ManyManiMVC/members">Show Current members</a>
 <p><a href="/ManyManiMVC/createMember2">Add a new member</a>  
+
+
+
+
 
 </body>
 </html>

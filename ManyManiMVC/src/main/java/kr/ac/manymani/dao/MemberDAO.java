@@ -1,12 +1,15 @@
 package kr.ac.manymani.dao;
 
+import java.io.IOException;
 import java.util.List;
 
 import javax.sql.DataSource;
-import kr.ac.manymani.domain.Member;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
+
+import kr.ac.manymani.domain.Member;
 
 //@Componentï¿½ë’— ï¿½ì”  ï¿½ê²¢ï¿½ì˜’ï¿½ë’ª?‘œï¿? ï¿½ì˜„ï¿½ë£ï¿½ì‘æ¿¡ï¿½ ?®?‰?‘æ¿¡ï¿½ ï¿½ê½•ï¿½ì ™ï¿½ë¹ ä»¥ï¿½ï¿½ë–.
 @Component("memberDAO")
@@ -29,10 +32,19 @@ public class MemberDAO {
 
 	// Querying and returning a single object
 	public Member getMember(String name) {
+		try {
+			String sqlStatement = "select * from member where memberId=?";
 
-		String sqlStatement = "select * from member where memberId=?";
-
-		return jdbcTemplateObject.queryForObject(sqlStatement, new Object[] { name }, new MemberMapper());
+			return jdbcTemplateObject.queryForObject(sqlStatement, new Object[] { name }, new MemberMapper());
+		}catch (Exception e) {
+		    
+			System.out.println("DAO ¿¹¿Ü Ã³¸® ¹ß»ı È¹ÀÎ ¸Ş¼¼Áö ");
+			e.printStackTrace();
+			return null;
+			
+		}
+	
+	
 
 	}
 

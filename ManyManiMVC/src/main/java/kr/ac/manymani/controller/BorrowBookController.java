@@ -25,14 +25,28 @@ public class BorrowBookController {
 	}
 
 	@RequestMapping("/borrowBook")
-	public String showBorrowBookPage() {
-
-		return "borrowBook";
+	public String showBorrowBookPage(HttpSession session) {
+		
+		String rcv = (String) session.getAttribute("logOk");
+		System.out.println(rcv);
+		if (rcv != null){
+			
+			return "borrowBook";
+			
+		}else{
+			
+			return "guideLogin";
+			
+		
+		}
 	}
 
 	@RequestMapping("/DoBorrowBook")
 	public String DoBorrowBookPage(HttpServletRequest request, HttpSession session, HttpServletResponse response, Model model) {
 
+		
+		
+		
 		String bookNumber = request.getParameter("bookNumber");
 		
 		//memberInfo로 session에서 memberDomain을 받아왔당.
@@ -53,7 +67,19 @@ public class BorrowBookController {
 			System.out.println("모델 아이언2");
 			return "failBorrowBook";
 		}
+
+		
 	}
+	
+	
+	@RequestMapping("/failBorrowBook")
+	public String showfailBorrowBookPage() {
+
+		return "failBorrowBook";
+	}
+
+	
+	
 	
 	/*controller에서 session으로 받아온 멤버를 매개변수르 넘겨줘야함
 	@RequestMapping("/DoUsePoint")
@@ -65,11 +91,4 @@ public class BorrowBookController {
 
 		return "failBorrowBook";
 	}*/
-	
-	@RequestMapping("/failBorrowBook")
-	public String showfailBorrowBookPage() {
-
-		return "failBorrowBook";
-	}
-
 }

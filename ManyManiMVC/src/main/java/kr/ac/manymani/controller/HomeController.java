@@ -24,15 +24,21 @@ public class HomeController {
 	 */
 
 		@RequestMapping(value = "/", method = RequestMethod.GET)
-		public String home() {
+		public String home(Model model) {
 			
 		
 			
 			return "home";
 		}
 		
+		@RequestMapping("/topMenu")
+		public String showTopMenunPage(){
+		
+			return "topMenu";
+		}
 		
 		
+
 	
 	
 }
