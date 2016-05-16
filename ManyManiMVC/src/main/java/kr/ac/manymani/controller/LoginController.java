@@ -22,47 +22,40 @@ public class LoginController {
 		this.loginservice = loginservice;	
 	}
 	
+	/*
 	@RequestMapping("/login")
 	public String showLoginPage(Model model){
 	
 		return "login";
 	}
+	*/
 	
-/*	
+	/*	
 	List<Member> members = loginservice.checkMember();
 	model.addAttribute("members", members);
-		
 	*/
+	
 	@RequestMapping("/doLogin")
-	public String loginProcess(Model model,HttpServletRequest request){
+	public String loginProcess(Model model, HttpServletRequest request){
 		
 		String tid = request.getParameter("id");
 		String tpassword = request.getParameter("password");
 		
 		Member member=loginservice.checkMember2(tid,tpassword);
-		
-		
-		
+				
 		if(member == null){		
 				return "home";
-			
-		}else{		
-		model.addAttribute("loginSucessObject", member);
-		
-		
+		}else{
+			model.addAttribute("loginSucessObject", member);
 			return "returnBook";
-		}
-
-		
-	}
-	
+		}		
+	}	
 
 	@RequestMapping("/members")
 	public String showMembers(Model model){
 
 		List<Member> members = loginservice.checkMember();
 		model.addAttribute("members", members);
-		
 		
 		return "members";
 	}

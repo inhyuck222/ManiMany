@@ -41,7 +41,7 @@
 		<h1>반납하실 책 번호를 입력하세요.</h1>
 		<hr />
 
-		<form action="/Day16/j03_login02_DB.jsp" method="post">
+		<form action="/ManyManiMVC/DoReturnBook" method="post">
 			아이디 : <input type="text" name="booknumber" /> <br /> 
 		</form>
 

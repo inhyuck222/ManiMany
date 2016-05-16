@@ -45,7 +45,6 @@ public class MemberDAO {
 																			// Classes
 
 	}
-	
 
 	public boolean insert(Member member){
 		

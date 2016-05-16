@@ -10,11 +10,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import kr.ac.manymani.domain.Book;
 import kr.ac.manymani.service.BorrowService;
+import kr.ac.manymani.service.PointRuleService;
+import kr.ac.manymani.service.RuleService;
 
 @Controller // 자바클래스를 bean으로 등록시킨다.
 public class BorrowBookController {
 
 	private BorrowService borrowService;
+	//private PointRuleService pointRuleService;
 
 	@Autowired // di 주입
 	public void setLoginService(BorrowService borrowService) {
@@ -47,8 +50,18 @@ public class BorrowBookController {
 			System.out.println("모델 아이언2");
 			return "failBorrowBook";
 		}
-
 	}
+	
+	/*controller에서 session으로 받아온 멤버를 매개변수르 넘겨줘야함
+	@RequestMapping("/DoUsePoint")
+	public String DoUsePoint(HttpServletRequest request, HttpServletResponse response, Model model) {
+		String pointStr = request.getParameter("point");
+		int point = Integer.parseInt(pointStr);
+		int calculatedPoint = pointRuleService.caclulateBorrowPoint(point);
+		
+
+		return "failBorrowBook";
+	}*/
 	
 	@RequestMapping("/failBorrowBook")
 	public String showfailBorrowBookPage() {

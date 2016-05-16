@@ -41,12 +41,10 @@
 		<h1>사용할 포인트를 입력하세요.</h1>
 		<hr />
 
-		<form action="/Day16/j03_login02_DB.jsp" method="post">
+		<form action="/ManyManiMVC/DoUsePoint" method="post">
 			사용할 포인트 : <input type="text" name="point" /> <br /> 
 		</form>
 	<c:out value="${ironman1}"></c:out>
-
-
 	</div>
 
 

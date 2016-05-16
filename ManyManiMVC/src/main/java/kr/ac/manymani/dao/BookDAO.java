@@ -35,7 +35,8 @@ public class BookDAO {
 		return jdbcTemplateObject.queryForObject(sqlStatement, new Object[] { bookNumber }, new BookMapper());
 
 	}
-
+	
+	
 	// Querying and returning multiple object
 	public List<Book> getBooks() {
 
