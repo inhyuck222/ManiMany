@@ -1,6 +1,8 @@
 package kr.ac.manymani.service;
 
+import kr.ac.manymani.domain.Member;
+
 public interface RuleService {
-	int caclulateBorrowPoint(int point);
-	int caclulateReturnPoint(Object member);
+	String caclulateBorrowPoint(Member member, String point,int currentPoint);
+	int caclulateReturnPoint(Object book, Object member, int resultDate);
 }

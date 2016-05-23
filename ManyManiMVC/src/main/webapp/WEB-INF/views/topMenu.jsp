@@ -34,7 +34,7 @@
 				<li><a href="/ManyManiMVC/returnBook">반납하기</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				    <li><a href="#"><span class="glyphicon glyphicon-user"></span>${sessionScope.loginMember.memberId}</a></li>
+				    <li><a href="#"><span class="glyphicon glyphicon-user"></span><%=rcv %></a></li>
 				<li><a href="/ManyManiMVC/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 			</ul>
 		</div>

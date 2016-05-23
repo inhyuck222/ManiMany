@@ -27,7 +27,7 @@
 		<form action="/ManyManiMVC/DoUsePoint" method="post">
 			사용할 포인트 : <input type="text" name="point" /> <br /> 
 		</form>
-	<c:out value="${ironman1}"></c:out>
+	<c:out value="${TryBookModel}"></c:out>
 	</div>
 
 

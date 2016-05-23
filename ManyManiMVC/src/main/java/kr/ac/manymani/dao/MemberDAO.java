@@ -36,15 +36,13 @@ public class MemberDAO {
 			String sqlStatement = "select * from member where memberId=?";
 
 			return jdbcTemplateObject.queryForObject(sqlStatement, new Object[] { name }, new MemberMapper());
-		}catch (Exception e) {
-		    
+		} catch (Exception e) {
+
 			System.out.println("DAO 예외 처리 발생 획인 메세지 ");
 			e.printStackTrace();
 			return null;
-			
+
 		}
-	
-	
 
 	}
 
@@ -58,41 +56,42 @@ public class MemberDAO {
 
 	}
 
-	public boolean insert(Member member){
-		
-		 String memberId = member.getMemberId();
-		 String password = member.getPassword();
-		 String bookName = member.getBookName();
-		 String lendingTerm = member.getLendingTerm();
-		 int point = member.getPoint();
-		 String email = member.getEmail();
-		
-				
-		String sqlStatement="insert into member (memberId, password, bookName, lendingTerm, point, email) values (?,?,?,?,?,?)";
-		return (jdbcTemplateObject.update(sqlStatement, new Object[]{memberId, password, bookName, lendingTerm, point, email})==1);
+	public boolean insert(Member member) {
+
+		String memberId = member.getMemberId();
+		String password = member.getPassword();
+		String bookName = member.getBookName();
+		String borrowDate = member.getBorrowDate();
+		String returnDate = member.getReturnDate();
+		int point = member.getPoint();
+		String email = member.getEmail();
+
+		String sqlStatement = "insert into member (memberId, password, bookName, borrowDate, returnDate,point, email) values (?,?,?,?,?,?)";
+		return (jdbcTemplateObject.update(sqlStatement,
+				new Object[] { memberId, password, bookName, borrowDate, returnDate, point, email }) == 1);
 	}
 
+	public boolean update(Member member) {
+
+		String memberId = member.getMemberId();
+		String bookName = member.getBookName();
+		int point = member.getPoint();
+		String borrowDate = member.getBorrowDate();
+		String returnDate = member.getReturnDate();
 	
-	public boolean update(Member member){
 		
-		 String memberId = member.getMemberId();
-		 String password = member.getPassword();
-		 String bookName = member.getBookName();
-		 String lendingTerm = member.getLendingTerm();
-		 int point = member.getPoint();
-		 String email = member.getEmail();
-		
-		String sqlStatement="update member set memberId=?, password=?, bookName=?, lendingTerm=?, point=?, email=? where id=?";
-		return (jdbcTemplateObject.update(sqlStatement, new Object[]{memberId, password, bookName, lendingTerm, point, email})==1);
+		String sqlStatement = "update member set bookName=?, point=?, borrowDate = ?, returnDate = ? where memberId=?";
+		return (jdbcTemplateObject.update(sqlStatement, new Object[] { bookName, point, borrowDate, returnDate,memberId }) == 1);
+	}
+
+	public boolean delete(int id) {
+
+		String sqlstatement = "delete from member where id=?";
+		return (jdbcTemplateObject.update(sqlstatement, new Object[] { id }) == 1);
 	}
 	
-	public boolean delete (int id) {
-		
-		String sqlstatement="delete from member where id=?";
-		return(jdbcTemplateObject.update(sqlstatement,new Object[]{id})==1);
-	}
+	
 	
 	
 
-	
 }

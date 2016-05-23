@@ -2,13 +2,16 @@ package kr.ac.manymani.domain;
 
 public class Book {
 	
-	
+
+
 	private int index;
 	private String bookNumber;
 	private String bookName;
 	private String borrowAvailability;
-	private String lendingTerm;
 	private String borrowerId;
+	private String borrowDate;
+	private String returnDate;
+	
 	
 	
 	public Book(){
@@ -16,34 +19,38 @@ public class Book {
 		
 	}
 	
-	public Book(int index, String bookNumber, String bookName, String borrowAvailability, String lendingTerm, String borrowerId) {
-		this.index=index;
+	
+	public Book(String bookNumber, String bookName, String borrowAvailability, String borrowerId,
+			String borrowDate, String returnDate) {
+	
+
 		this.bookNumber = bookNumber;
 		this.bookName = bookName;
 		this.borrowAvailability = borrowAvailability;
-		this.lendingTerm = lendingTerm;
 		this.borrowerId = borrowerId;
+		this.borrowDate = borrowDate;
+		this.returnDate = returnDate;
 	}
-
-
-
-	public Book(String bookNumber, String bookName, String borrowAvailability, String lendingTerm, String borrowerId) {
+	
+	public Book(int index, String bookNumber, String bookName, String borrowAvailability, String borrowerId,
+			String borrowDate, String returnDate) {
 		
+		this.index = index;
 		this.bookNumber = bookNumber;
 		this.bookName = bookName;
 		this.borrowAvailability = borrowAvailability;
-		this.lendingTerm = lendingTerm;
 		this.borrowerId = borrowerId;
+		this.borrowDate = borrowDate;
+		this.returnDate = returnDate;
 	}
 
-
 	
-	
-
 
 	public int getIndex() {
 		return index;
 	}
+
+
 
 	public void setIndex(int index) {
 		this.index = index;
@@ -56,9 +63,11 @@ public class Book {
 	}
 
 
+
 	public void setBookNumber(String bookNumber) {
 		this.bookNumber = bookNumber;
 	}
+
 
 
 	public String getBookName() {
@@ -66,9 +75,11 @@ public class Book {
 	}
 
 
+
 	public void setBookName(String bookName) {
 		this.bookName = bookName;
 	}
+
 
 
 	public String getBorrowAvailability() {
@@ -76,19 +87,11 @@ public class Book {
 	}
 
 
+
 	public void setBorrowAvailability(String borrowAvailability) {
 		this.borrowAvailability = borrowAvailability;
 	}
 
-
-	public String getLendingTerm() {
-		return lendingTerm;
-	}
-
-
-	public void setLendingTerm(String lendingTerm) {
-		this.lendingTerm = lendingTerm;
-	}
 
 
 	public String getBorrowerId() {
@@ -96,18 +99,42 @@ public class Book {
 	}
 
 
+
 	public void setBorrowerId(String borrowerId) {
 		this.borrowerId = borrowerId;
 	}
 
 
+
+	public String getBorrowDate() {
+		return borrowDate;
+	}
+
+
+
+	public void setBorrowDate(String borrowDate) {
+		this.borrowDate = borrowDate;
+	}
+
+
+
+	public String getReturnDate() {
+		return returnDate;
+	}
+
+
+
+	public void setReturnDate(String returnDate) {
+		this.returnDate = returnDate;
+	}
+
+
+
 	@Override
 	public String toString() {
 		return "Book [index=" + index + ", bookNumber=" + bookNumber + ", bookName=" + bookName
-				+ ", borrowAvailability=" + borrowAvailability + ", lendingTerm=" + lendingTerm + ", borrowerId="
-				+ borrowerId + "]";
+				+ ", borrowAvailability=" + borrowAvailability + ", borrowerId=" + borrowerId + ", borrowDate="
+				+ borrowDate + ", returnDate=" + returnDate + "]";
 	}
 
-	
-	
 }

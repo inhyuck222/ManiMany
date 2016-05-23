@@ -12,15 +12,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import kr.ac.manymani.domain.Book;
 import kr.ac.manymani.domain.Member;
 import kr.ac.manymani.service.BorrowService;
+import kr.ac.manymani.service.PointRuleService;
 
 @Controller // 자바클래스를 bean으로 등록시킨다.
 public class BorrowBookController {
 
 	private BorrowService borrowService;
+	private PointRuleService pointRuleService;
 	//private PointRuleService pointRuleService;
 
 	@Autowired // di 주입
-	public void setLoginService(BorrowService borrowService) {
+	public void setLoginService(BorrowService borrowService,PointRuleService pointRuleService ) {
+		this.pointRuleService = pointRuleService;
 		this.borrowService = borrowService;
 	}
 
@@ -46,30 +49,61 @@ public class BorrowBookController {
 
 		
 		
-		
+		//borrowBook페이지에서 입력한 책번호를 받아온다.
 		String bookNumber = request.getParameter("bookNumber");
 		
 		//memberInfo로 session에서 memberDomain을 받아왔당.
-		Member member = (Member)session.getAttribute("memberInfo");
+		Member loginStudent = (Member)session.getAttribute("loginStudent");
 		
 		Book book = borrowService.checkBorrow(bookNumber);
-		if (book.getBorrowAvailability().equals("void") ) {
+		
+		
+		if (book.getBorrowAvailability().equals("null") ) {
 			//책을 빌릴 수 있는 상태입 
-			
-			model.addAttribute("ironman1", book.getBorrowAvailability());
-			System.out.println("모델 아이언1");
+			System.out.println("책을 빌릴 수 있는 controller"+book);
+			model.addAttribute("TryBookModel", book);
+			session.setAttribute("TryBookSession", book);
 			return "DoBorrowBook";
 
 		} else {
 			//책을 빌릴수 없는 상태임 
 			
-			model.addAttribute("ironman2", book.getBorrowAvailability());
-			System.out.println("모델 아이언2");
+			System.out.println("책을 빌릴 없는  controller"+book);
 			return "failBorrowBook";
 		}
 
 		
 	}
+	
+	
+	
+	
+	@RequestMapping("/DoUsePoint")
+	public String showDoUsePointPage(HttpServletRequest request,Model model,HttpSession session) {
+		
+		String usePoint = request.getParameter("point");
+		Book book =(Book)session.getAttribute("TryBookSession");
+		Member member =(Member)session.getAttribute("loginStudent");		
+		
+		System.out.println("책을 빌릴 수 있는 DoUsePoint"+book+usePoint+member);
+		
+		String rcv =borrowService.usePoint(usePoint,member,book);
+		if(rcv.equals("대여싱패")){
+			
+			return "failUsePoint";
+			
+		}else{
+	
+		return "home";
+	
+		}
+	
+	
+	}
+
+	
+	
+	
 	
 	
 	@RequestMapping("/failBorrowBook")
@@ -79,16 +113,12 @@ public class BorrowBookController {
 	}
 
 	
-	
-	
-	/*controller에서 session으로 받아온 멤버를 매개변수르 넘겨줘야함
-	@RequestMapping("/DoUsePoint")
-	public String DoUsePoint(HttpServletRequest request, HttpServletResponse response, Model model) {
-		String pointStr = request.getParameter("point");
-		int point = Integer.parseInt(pointStr);
-		int calculatedPoint = pointRuleService.caclulateBorrowPoint(point);
-		
+	@RequestMapping("/failUsePoint")
+	public String showfailUsePointPage() {
 
-		return "failBorrowBook";
-	}*/
+		return "failUsePoint";
+	}
+
+	
+	
 }

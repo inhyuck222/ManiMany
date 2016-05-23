@@ -1,5 +1,11 @@
 package kr.ac.manymani.service;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,33 +18,77 @@ import kr.ac.manymani.domain.Member;
 public class ReturnService {
 	private BookDAO bookDAO;
 	private MemberDAO memberDAO;
-	
+	private PointRuleService pointRuleService;
 	@Autowired
-	public void setBookDAO(BookDAO bookDAO){
+	public void setBookDAO(BookDAO bookDAO,PointRuleService pointRuleService) {
 		this.bookDAO = bookDAO;
+		this.pointRuleService=pointRuleService;
 	}
-	
+
 	@Autowired
-	public void setMemberDAO(MemberDAO memberDAO){
+	public void setMemberDAO(MemberDAO memberDAO) {
+
 		this.memberDAO = memberDAO;
 	}
+
+	public int checkLate(String returnDate) {
+
+		
+		Calendar cal = Calendar.getInstance();
+	    cal.setTime(new Date());
+	    DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+	    
+	    String today = df.format(cal.getTime());
+	    
+		try {
+			DateFormat dif = new SimpleDateFormat("yyyy-MM-dd");
+			Date beginDate = dif.parse(today);
+			Date endDate = dif.parse(returnDate);
+
+			long diff = endDate.getTime() - beginDate.getTime();
+			long diffDays = diff / (24 * 60 * 60 * 1000);
+
+			int result = (int) diffDays;
+
+			return result;
+
+		} catch (ParseException e) {
+			e.printStackTrace();
+			return -999;
+
+		}
+	    
+	 
+	  
+	   
+	    //String returnTime = df.format(cal.getTime());
 	
-	public Book returnBook(String bookNumber){
-		Book book = bookDAO.selectBookInfo(bookNumber);
-		String borrowerTerm = book.getLendingTerm();
-		String borrowerId = book.getBorrowerId();
-		
-		Member member = memberDAO.getMember(borrowerId);
-		
-		//세션에서 멤버 받아와서 하면 됨
-		
-		
-		
-		return book;
+	    // 특정 형태의 날짜로 값을 뽑기 
+	   
 	}
-	
-	public String checkLate(String borrowerTerm){
+
+	public String returnBook(String bookNumber) {
+
+		Book book=bookDAO.getBook(bookNumber);
+		Member member= memberDAO.getMember(book.getBorrowerId());
+		int resultDate=checkLate(book.getReturnDate());
+		
+		if (resultDate == -999) return "반납실패";
+		pointRuleService.caclulateReturnPoint(book, member, resultDate);
+		
+		book.setBorrowDate(null);
+		book.setReturnDate(null);
+		book.setBorrowerId(null);
+		book.setBorrowAvailability(null);
+		
+		member.setBorrowDate(null);
+		member.setReturnDate(null);
+		member.setBookName(null);
+				
+		bookDAO.update(book);
+		memberDAO.update(member);
 		
 		return "반납됨";
 	}
+
 }

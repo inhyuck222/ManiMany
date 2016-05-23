@@ -36,7 +36,7 @@ public class LoginController {
 		String tid = request.getParameter("id");
 		String tpassword = request.getParameter("password");
 		
-		Member member=loginservice.checkMember2(tid,tpassword);
+		Member member=loginservice.checkMember(tid,tpassword);
 		
 		if(member == null){
 			
@@ -44,8 +44,7 @@ public class LoginController {
 	
 		} else {
 			
-			model.addAttribute("loginSucessObject", member);
-			session.setAttribute("loginMember", member);		
+			session.setAttribute("loginStudent", member);		
 			session.setAttribute("logOk", member.getMemberId());
 	
 			return "home";
@@ -76,15 +75,7 @@ public class LoginController {
 	}
 	
 	
-	/*	@RequestMapping("/members")
-	public String showMembers(Model model){
 
-		List<Member> members = loginservice.checkMember();
-		model.addAttribute("members", members);
-		
-		return "members";
-	}
-	*/
 	
 	
 }

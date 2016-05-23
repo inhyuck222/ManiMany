@@ -2,42 +2,52 @@ package kr.ac.manymani.domain;
 
 public class Member {
 
+
 	private int index;
 	private String memberId;
 	private String password;
 	private String bookName;
-	private String lendingTerm;
 	private int point;
 	private String email;
+	private String borrowDate;
+	private String returnDate;
 
 	public Member(){
 			
 		
 	}
+	
 
-	public Member(int index, String memberId, String password, String bookName, String lendingTerm, int point,
-			String email) {
-		super();
+	public Member(int index, String memberId, String password, String bookName, int point, String email,
+			String borrowDate, String returnDate) {
+	
 		this.index = index;
 		this.memberId = memberId;
 		this.password = password;
 		this.bookName = bookName;
-		this.lendingTerm = lendingTerm;
 		this.point = point;
 		this.email = email;
+		this.borrowDate = borrowDate;
+		this.returnDate = returnDate;
 	}
 
-	public Member(String memberId, String password, String bookName, String lendingTerm, int point, String email) {
-		super();
+	
 
+	public Member(String memberId, String password, String bookName, int point, String email,
+			String borrowDate, String returnDate) {
+	
+	
 		this.memberId = memberId;
 		this.password = password;
 		this.bookName = bookName;
-		this.lendingTerm = lendingTerm;
 		this.point = point;
 		this.email = email;
+		this.borrowDate = borrowDate;
+		this.returnDate = returnDate;
 	}
 
+
+	
 	public int getIndex() {
 		return index;
 	}
@@ -70,14 +80,6 @@ public class Member {
 		this.bookName = bookName;
 	}
 
-	public String getLendingTerm() {
-		return lendingTerm;
-	}
-
-	public void setLendingTerm(String lendingTerm) {
-		this.lendingTerm = lendingTerm;
-	}
-
 	public int getPoint() {
 		return point;
 	}
@@ -94,10 +96,28 @@ public class Member {
 		this.email = email;
 	}
 
+	public String getBorrowDate() {
+		return borrowDate;
+	}
+
+	public void setBorrowDate(String borrowDate) {
+		this.borrowDate = borrowDate;
+	}
+
+	public String getReturnDate() {
+		return returnDate;
+	}
+
+	public void setReturnDate(String returnDate) {
+		this.returnDate = returnDate;
+	}
+
+	
 	@Override
 	public String toString() {
 		return "Member [index=" + index + ", memberId=" + memberId + ", password=" + password + ", bookName=" + bookName
-				+ ", lendingTerm=" + lendingTerm + ", point=" + point + ", email=" + email + "]";
+				+ ", point=" + point + ", email=" + email + ", borrowDate=" + borrowDate + ", returnDate=" + returnDate
+				+ "]";
 	}
 
 }

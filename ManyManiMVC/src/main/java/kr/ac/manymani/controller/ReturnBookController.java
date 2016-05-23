@@ -50,8 +50,8 @@ public class ReturnBookController {
 	public String DoReturnBookPage(HttpServletRequest request, HttpSession session, HttpServletResponse response, Model model) {
 
 		String bookNumber = request.getParameter("booknumber");
-		Member member = (Member)session.getAttribute("memberInfo");
-		Book book = returnService.returnBook(bookNumber);
+		
+
 		
 		return null;
 	}	

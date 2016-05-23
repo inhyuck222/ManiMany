@@ -21,7 +21,8 @@ public class BookMapper implements RowMapper<Book> {
 		book.setBorrowAvailability(rs.getString("borrowAvailability"));
 		book.setBorrowerId(rs.getString("borrowerId"));
 		book.setIndex(rs.getInt("index"));
-		book.setLendingTerm(rs.getString("lendingTerm"));
+		book.setBorrowDate(rs.getString("borrowDate"));
+		book.setReturnDate(rs.getString("returnDate"));
 		
 		return book;
 	}

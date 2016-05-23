@@ -18,9 +18,10 @@ public class MemberMapper implements RowMapper<Member> {
 		member.setMemberId(rs.getString("memberId"));
 		member.setPassword(rs.getString("password"));
 		member.setBookName(rs.getString("bookName"));
-		member.setLendingTerm(rs.getString("lendingTerm"));
 		member.setPoint(rs.getInt("point"));
 		member.setEmail(rs.getString("email"));
+		member.setBorrowDate(rs.getString("borrowDate"));
+		member.setReturnDate(rs.getString("returnDate"));
 
 		return member;
 		

@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.sql.DataSource;
 import kr.ac.manymani.domain.Book;
+import kr.ac.manymani.domain.Member;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
@@ -28,15 +30,14 @@ public class BookDAO {
 	}
 
 	// Querying and returning a single object
-	public Book selectBookInfo(String bookNumber) {
+	public Book getBook(String bookNumber) {
 
 		String sqlStatement = "select * from book where bookNumber=?";
 
 		return jdbcTemplateObject.queryForObject(sqlStatement, new Object[] { bookNumber }, new BookMapper());
 
 	}
-	
-	
+
 	// Querying and returning multiple object
 	public List<Book> getBooks() {
 
@@ -46,44 +47,49 @@ public class BookDAO {
 																			// Classes
 
 	}
-	
-/*
-	public boolean insert(Book book){
-		
-		 String memberId = member.getMemberId();
-		 String password = member.getPassword();
-		 String bookName = member.getBookName();
-		 String lendingTerm = member.getLendingTerm();
-		 int point = member.getPoint();
-		 String email = member.getEmail();
-		
-				
-		String sqlStatement="insert into member (memberId, password, bookName, lendingTerm, point, email) values (?,?,?,?,?,?)";
-		return (jdbcTemplateObject.update(sqlStatement, new Object[]{memberId, password, bookName, lendingTerm, point, email})==1);
-	}
 
-	*/
-	public boolean update(Book book){
-		
-		 String bookNumber = book.getBookNumber(); 
-		 String bookName = book.getBookName();
-		 String borrowAvailability = book.getBorrowAvailability();
-		 String lendingTerm = book.getLendingTerm();
-		 String borrowerId = book.getBorrowerId();
-		
-		String sqlStatement="update member set bookNumber=?, bookName=?, borrowAvailability=?, lendingTerm=?, borrowerId=? where id=?";
-		return (jdbcTemplateObject.update(sqlStatement, new Object[]{bookNumber, bookName, borrowAvailability, lendingTerm, borrowerId})==1);
-	}
+	/*
+	 * public boolean insert(Book book){
+	 * 
+	 * String memberId = member.getMemberId(); String password =
+	 * member.getPassword(); String bookName = member.getBookName(); String
+	 * lendingTerm = member.getLendingTerm(); int point = member.getPoint();
+	 * String email = member.getEmail();
+	 * 
+	 * 
+	 * String sqlStatement=
+	 * "insert into member (memberId, password, bookName, lendingTerm, point, email) values (?,?,?,?,?,?)"
+	 * ; return (jdbcTemplateObject.update(sqlStatement, new Object[]{memberId,
+	 * password, bookName, lendingTerm, point, email})==1); }
+	 * 
+	 */
 
 	
-	/*	
-	public boolean delete (int id) {
-		
-		String sqlstatement="delete from member where id=?";
-		return(jdbcTemplateObject.update(sqlstatement,new Object[]{id})==1);
+	
+	public boolean update(Book book) {
+
+		String borrowAvailability = book.getBorrowAvailability();
+		String borrowerId = book.getBorrowerId();
+		String bookName = book.getBookName();
+		String borrowDate = book.getBorrowDate();
+		String returnDate = book.getReturnDate();
+
+		String sqlStatement = "update book set borrowAvailability=?, borrowerId=?, borrowDate = ?, returnDate = ? where bookName=?";
+		return (jdbcTemplateObject.update(sqlStatement, new Object[] { borrowAvailability, borrowerId, borrowDate, returnDate, bookName}) == 1);
 	}
+
 	
 	
-*/
 	
+	
+
+	/*
+	 * public boolean delete (int id) {
+	 * 
+	 * String sqlstatement="delete from member where id=?";
+	 * return(jdbcTemplateObject.update(sqlstatement,new Object[]{id})==1); }
+	 * 
+	 * 
+	 */
+
 }
