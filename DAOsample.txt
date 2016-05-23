@@ -1,0 +1,11 @@
+
+	public void insertBorrowInfo(BorrowInfo borrowInfo) {
+		String memberId = borrowInfo.getMemberId();
+		int bookId = borrowInfo.getBookId();
+
+		String sqlStatement = "insert into borrowInfo (memberId, bookId, borrowDate, borrowTerm) "
+				+ "values (?, ?, now(), date_add(now(),interval 15 day))";
+
+		jdbcTemplateObject.update(sqlStatement, new Object[] { memberId, bookId });
+
+	}
