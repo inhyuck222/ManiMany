@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,11 +8,19 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%-- 	<%
+	
 
+		String nowID = (String) session.getAttribute("TryBookSession");
+
+		session.invalidate();
+
+	%>
+ --%>
 
 	<script type="text/javascript">
-		alert("반납이 처리되었습니다.");
-		location.href="/ManyManiMVC/";
+		alert("대여되었습니다.");
+		location.href = "/ManyManiMVC/";
 	</script>
 
 

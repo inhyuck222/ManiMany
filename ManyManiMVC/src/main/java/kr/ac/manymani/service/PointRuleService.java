@@ -15,7 +15,8 @@ public class PointRuleService implements RuleService{
 		int resultLendingTerm=10;
 		int intUsePoint = Integer.parseInt(usepoint);
 		
-		if(intUsePoint >= 100 && intUsePoint <= currentPoint ){
+		
+		if((intUsePoint%100==0) && intUsePoint <= currentPoint ){
 			resultLendingTerm += intUsePoint/100;
 			member.setPoint(currentPoint-intUsePoint);	
 			return resultLendingTerm+"";
@@ -33,7 +34,7 @@ public class PointRuleService implements RuleService{
 		Member member = (Member)objectMember;
 		
 		int point = member.getPoint();
-		if(resultDate > 0) {
+		if(resultDate >= 0) {
 			point += 100;
 		}
 		else {

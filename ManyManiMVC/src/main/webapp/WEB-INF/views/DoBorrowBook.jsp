@@ -21,10 +21,13 @@
  	<!---------------------------------네비게이션 바 끝-------------------------  -->
  	
  	<div class="container">
-		<h1>사용할 포인트를 입력하세요.</h1>
+			<h1>사용할 포인트를 입력하세요.</h1>
+			<h3>사용할 포인트는 100단위 입니다.</h3>
+			<h3>사용하지 않을시 0을 입력하세요.</h3>
 		<hr />
 
 		<form action="/ManyManiMVC/DoUsePoint" method="post">
+			   잔여 포인트 : ${sessionScope.loginStudent.point} <br/>
 			사용할 포인트 : <input type="text" name="point" /> <br /> 
 		</form>
 	<c:out value="${TryBookModel}"></c:out>

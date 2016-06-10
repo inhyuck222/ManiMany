@@ -27,7 +27,7 @@
 
 		<script type="text/javascript">
 			alert("포인트 입력 오류입니다.");
-			location.href="/ManyManiMVC/DoBorrowBook";		
+			location.href="/ManyManiMVC/borrowBook";		
 		</script>
 
 </body>

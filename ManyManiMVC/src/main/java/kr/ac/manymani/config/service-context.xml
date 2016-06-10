@@ -9,5 +9,33 @@
 	<context:annotation-config></context:annotation-config>
 	
 	<context:component-scan base-package="kr.ac.manymani.service"></context:component-scan>
-
+	
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+	<property name="host" value="smtp.gmail.com" />
+	<property name="port" value="587" />
+	<property name="username" value="nihil0821" />
+	<property name="password" value="rjs642879!" />
+ 
+	<property name="javaMailProperties">
+	   <props>
+       	      <prop key="mail.smtp.auth">true</prop>
+       	      <prop key="mail.smtp.starttls.enable">true</prop>
+       	   </props>
+	</property>
+	</bean>
+	
+	<bean id="mailService" class="kr.ac.manymani.service.MailService">
+	<property name="mailSender" ref="mailSender" />
+	</bean>
+	
+	<bean id="message" class="org.springframework.mail.SimpleMailMessage">
+	</bean>
 </beans>
+
+
+
+
+
+
+
+

@@ -56,9 +56,13 @@ public class BorrowBookController {
 		Member loginStudent = (Member)session.getAttribute("loginStudent");
 		
 		Book book = borrowService.checkBorrow(bookNumber);
+		if(book==null){
+			System.out.println("책을 빌릴 없는  controller"+book);
+			return "failBorrowBook";
+			
+		}
 		
-		
-		if (book.getBorrowAvailability().equals("null") ) {
+		if(book.getBorrowAvailability().equals("대여가능") ) {
 			//책을 빌릴 수 있는 상태입 
 			System.out.println("책을 빌릴 수 있는 controller"+book);
 			model.addAttribute("TryBookModel", book);
@@ -74,8 +78,6 @@ public class BorrowBookController {
 
 		
 	}
-	
-	
 	
 	
 	@RequestMapping("/DoUsePoint")
@@ -94,18 +96,14 @@ public class BorrowBookController {
 			
 		}else{
 	
-		return "home";
+			
+		return "successBorrow";
 	
 		}
 	
 	
 	}
 
-	
-	
-	
-	
-	
 	@RequestMapping("/failBorrowBook")
 	public String showfailBorrowBookPage() {
 

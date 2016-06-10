@@ -15,27 +15,49 @@
 <script
 	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<%@ page session="true" %>
+<%@ page session="true"%>
 
 <title>Return Page</title>
 </head>
 <body>
 
 	<!---------------------------------네비게이션 바 시작-------------------------  -->
-		<jsp:include page="topMenu.jsp" flush="false"></jsp:include>
- 	<!---------------------------------네비게이션 바 끝-------------------------  -->
- 
+	<jsp:include page="topMenu.jsp" flush="false"></jsp:include>
+	<!---------------------------------네비게이션 바 끝-------------------------  -->
+
+	<%-- <%
+		String rcv = (String) session.getAttribute("returnfail");
+		if (rcv.equals("반납실패")) {
+	%>
+
+	<script type="text/javascript">
+		alert("반납이 실패하였습니다. 다시 반납해주세요");
+		location.href = "/ManyManiMVC/";
+	</script>
+
+	<%
+		}else{
+	%>
+	
+	
+	<%
+	
+		}
+	%>
+ --%>
+
+
 	<div class="container">
 		<h1>반납하실 책 번호를 입력하세요.</h1>
 		<hr />
 
 		<form action="/ManyManiMVC/DoReturnBook" method="post">
-			아이디 : <input type="text" name="booknumber" /> <br /> 
+			반납할 책번호 : <input type="text" name="booknumber" /> <br />
 		</form>
 
 	</div>
-	
 
-	
+
+
 </body>
 </html>

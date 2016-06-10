@@ -35,7 +35,7 @@
 	</div>
 	
 	  <c:out value="${loginSucessObject}"></c:out>
-	<p>세션 이름 : <b>${sessionScope.loginMember.memberId}</b></p>
+
 
 </body>
 </html>

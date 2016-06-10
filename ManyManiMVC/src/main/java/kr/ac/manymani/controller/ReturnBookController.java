@@ -50,9 +50,17 @@ public class ReturnBookController {
 	public String DoReturnBookPage(HttpServletRequest request, HttpSession session, HttpServletResponse response, Model model) {
 
 		String bookNumber = request.getParameter("booknumber");
+		String result=returnService.returnBook(bookNumber);
+		if(result.equals("¹Ý³³µÊ")){
+			
+			return "successReturn";	
+			
+		}else{
 		
-
+			
+			return "failReturnBook";
+		}
 		
-		return null;
+		
 	}	
 }

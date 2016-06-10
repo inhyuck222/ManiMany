@@ -32,10 +32,17 @@ public class BookDAO {
 	// Querying and returning a single object
 	public Book getBook(String bookNumber) {
 
-		String sqlStatement = "select * from book where bookNumber=?";
+		try {
+			String sqlStatement = "select * from book where bookNumber=?";
 
-		return jdbcTemplateObject.queryForObject(sqlStatement, new Object[] { bookNumber }, new BookMapper());
+			return jdbcTemplateObject.queryForObject(sqlStatement, new Object[] { bookNumber }, new BookMapper());
+		} catch (Exception e) {
 
+			System.out.println("getBookDAO 예외 처리 발생 획인 메세지 ");
+			e.printStackTrace();
+			return null;
+
+		}
 	}
 
 	// Querying and returning multiple object
@@ -64,8 +71,6 @@ public class BookDAO {
 	 * 
 	 */
 
-	
-	
 	public boolean update(Book book) {
 
 		String borrowAvailability = book.getBorrowAvailability();
@@ -75,13 +80,9 @@ public class BookDAO {
 		String returnDate = book.getReturnDate();
 
 		String sqlStatement = "update book set borrowAvailability=?, borrowerId=?, borrowDate = ?, returnDate = ? where bookName=?";
-		return (jdbcTemplateObject.update(sqlStatement, new Object[] { borrowAvailability, borrowerId, borrowDate, returnDate, bookName}) == 1);
+		return (jdbcTemplateObject.update(sqlStatement,
+				new Object[] { borrowAvailability, borrowerId, borrowDate, returnDate, bookName }) == 1);
 	}
-
-	
-	
-	
-	
 
 	/*
 	 * public boolean delete (int id) {

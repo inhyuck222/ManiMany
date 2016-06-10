@@ -11,7 +11,7 @@
 
 
 	<script type="text/javascript">
-		alert("반납이 처리되었습니다.");
+		alert("반납이 성공하였습니다.");
 		location.href="/ManyManiMVC/";
 	</script>
 

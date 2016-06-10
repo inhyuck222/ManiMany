@@ -26,7 +26,7 @@
 
 
 		<script type="text/javascript">
-			alert("현재 대여중인 책 입니다. 다시 입력 하세요");
+			alert("대여할 수 없습니다.");
 			location.href="/ManyManiMVC/borrowBook";		
 		</script>
 

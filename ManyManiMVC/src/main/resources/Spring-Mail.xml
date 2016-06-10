@@ -1,16 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
-
-	<context:annotation-config></context:annotation-config>
+<context:annotation-config></context:annotation-config>
 	
 	<context:component-scan base-package="kr.ac.manymani.service"></context:component-scan>
-	
-	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+ 
+<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">	
 	<property name="host" value="smtp.gmail.com" />
 	<property name="port" value="587" />
 	<property name="username" value="nihil0821" />
@@ -22,20 +20,11 @@
        	      <prop key="mail.smtp.starttls.enable">true</prop>
        	   </props>
 	</property>
-	</bean>
-	
-	<bean id="mailService" class="kr.ac.manymani.service.MailService">
+</bean>
+ 
+<bean id="mailService" class="kr.ac.manymani.service.MailService">
 	<property name="mailSender" ref="mailSender" />
-	</bean>
-	
-	<bean id="message" class="org.springframework.mail.SimpleMailMessage">
-	</bean>
+</bean>
+ 
 </beans>
-
-
-
-
-
-
-
 

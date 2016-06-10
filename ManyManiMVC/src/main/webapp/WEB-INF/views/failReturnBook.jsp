@@ -11,8 +11,8 @@
 
 
 	<script type="text/javascript">
-		alert("반납이 처리되었습니다.");
-		location.href="/ManyManiMVC/";
+		alert("반납을 처리 할 수 없습니다.");
+		location.href="/ManyManiMVC/returnBook";
 	</script>
 
 
